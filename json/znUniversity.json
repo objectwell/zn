@@ -1,0 +1,3447 @@
+{
+    "err_code": 0,
+    "msg": "成功!",
+    "success": true,
+    "data": [
+        {
+            "name": "一般信息",
+            "desc": "",
+            "data": [
+                {
+                    "title": "就读大学前，你的住址是",
+                    "type": "select",
+                    "questionNum": "A01",
+                    "required": "required",
+                    "linkageType":"proMunCounty",
+                    "answers": [],
+                    "data": []
+                },
+                {
+                    "title": "过去十年中，是否曾搬迁至外地（跨市）",
+                    "type": "radio",
+                    "questionNum": "A02",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "未曾搬迁至外地（跨市）"
+                        },
+                        {
+                            "value": 1,
+                            "str": "搬迁过"
+                        }
+                    ],
+                    "data": [
+                        {
+                            "selectValue": [
+                                1
+                            ],
+                            "data": [
+                                {
+                                    "title": "若搬迁过，则搬迁前的住址是",
+                                    "type": "select",
+                                    "questionNum": "A03",
+                                    "required": false,
+                                    "linkageType":"proMunCounty",
+                                    "answers": [],
+                                    "data": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "性别",
+                    "type": "radio",
+                    "questionNum": "A04",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "男"
+                        },
+                        {
+                            "value": 2,
+                            "str": "女"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "民族",
+                    "type": "select",
+                    "questionNum": "A05",
+                    "required": "required",
+                    "linkageType":"nation",
+                    "answers": [],
+                    "data": []
+                },
+                {
+                    "title": "全家年收入",
+                    "type": "radio",
+                    "questionNum": "A06",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "1万以下"
+                        },
+                        {
+                            "value": 2,
+                            "str": "1~~2.9万"
+                        },
+                        {
+                            "value": 3,
+                            "str": "3~~4.9万"
+                        },
+                        {
+                            "value": 4,
+                            "str": "5~~9.9万"
+                        },
+                        {
+                            "value": 5,
+                            "str": "10~~19.9万"
+                        },
+                        {
+                            "value": 6,
+                            "str": "20万以上"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "目前婚恋情况",
+                    "type": "radio",
+                    "questionNum": "A07",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "单身"
+                        },
+                        {
+                            "value": 2,
+                            "str": "有稳定的恋爱关系"
+                        },
+                        {
+                            "value": 3,
+                            "str": "已婚或同居"
+                        },
+                        {
+                            "value": 98,
+                            "str": "其他",
+                            "inputText":true
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "与你共同居住超过6个月的家庭成员数是（包括自己）_?",
+                    "type": "text",
+                    "questionNum": "A08",
+                    "required": "required"
+                },
+                {
+                    "title": "你的家庭结构是什么",
+                    "type": "radio",
+                    "questionNum": "A09",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "核心家庭（父亲、母亲、孩子)"
+                        },
+                        {
+                            "value": 2,
+                            "str": "单亲家庭（父亲或母亲一方、孩子）"
+                        },
+                        {
+                            "value": 3,
+                            "str": "留守儿童（父母在外地，和祖父母或亲戚一起生活）"
+                        },
+                        {
+                            "value": 4,
+                            "str": "扩展家庭（祖父/母、父亲和母亲、孩子）  "
+                        },
+                        {
+                            "value": 5,
+                            "str": "大家庭（祖父/母、父亲/母亲、孩子、叔叔/姑姑等其他亲戚）"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你父亲的文化程度",
+                    "type": "radio",
+                    "questionNum": "A10",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "小学及以下"
+                        },
+                        {
+                            "value": 2,
+                            "str": "初中"
+                        },
+                        {
+                            "value": 3,
+                            "str": "高中及中专"
+                        },
+                        {
+                            "value": 4,
+                            "str": "本科及大专"
+                        },
+                        {
+                            "value": 5,
+                            "str": "研究生及以上"
+                        },
+                        {
+                            "value": 6,
+                            "str": "不清楚"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你母亲的文化程度",
+                    "type": "radio",
+                    "questionNum": "A11",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "小学及以下"
+                        },
+                        {
+                            "value": 2,
+                            "str": "初中"
+                        },
+                        {
+                            "value": 3,
+                            "str": "高中及中专"
+                        },
+                        {
+                            "value": 4,
+                            "str": "本科及大专"
+                        },
+                        {
+                            "value": 5,
+                            "str": "研究生及以上"
+                        },
+                        {
+                            "value": 6,
+                            "str": "不清楚"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你父亲的民族",
+                    "type": "select",
+                    "questionNum": "A12",
+                    "required": "required",
+                    "linkageType":"nation",
+                    "answers": [],
+                    "data": []
+                },
+                {
+                    "title": "你母亲的民族",
+                    "type": "select",
+                    "questionNum": "A13",
+                    "required": "required",
+                    "linkageType":"nation",
+                    "answers": [],
+                    "data": []
+                }
+            ]
+        },
+        {
+            "name": "既往史",
+            "data": [
+                
+                {
+                    "title": "你是否曾被医生明确诊断为以下心血管或代谢性疾病",
+                    "type": "checkbox",
+                    "questionNum": "B01",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "高血压"
+                        },
+                        {
+                            "value": 2,
+                            "str": "冠心病"
+                        },
+                        {
+                            "value": 3,
+                            "str": "高脂血症"
+                        },
+                        {
+                            "value": 4,
+                            "str": "肥胖症"
+                        },
+                        {
+                            "value": 5,
+                            "str": "脂肪肝"
+                        },
+                        {
+                            "value": 6,
+                            "str": "痛风"
+                        },
+                        {
+                            "value": 7,
+                            "str": "银屑病/牛皮癣"
+                        },
+                        {
+                            "value": 8,
+                            "str": "以上均没有"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你是否曾被医生明确诊断为以下过敏性疾病",
+                    "type": "checkbox",
+                    "questionNum": "B02",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "哮喘"
+                        },
+                        {
+                            "value": 2,
+                            "str": "过敏性鼻炎"
+                        },
+                        {
+                            "value": 3,
+                            "str": "过敏性结膜炎"
+                        },
+                        {
+                            "value": 4,
+                            "str": "湿疹"
+                        },
+                        {
+                            "value": 5,
+                            "str": "荨麻疹"
+                        },
+                        {
+                            "value": 6,
+                            "str": "以上均没有"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你是否曾被医生明确诊断为以下感染性疾病",
+                    "type": "checkbox",
+                    "questionNum": "B03",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "肺结核或其他结核"
+                        },
+                        {
+                            "value": 2,
+                            "str": "乙型肝炎"
+                        },
+                        {
+                            "value": 3,
+                            "str": "乙型肝炎"
+                        },
+                        {
+                            "value": 4,
+                            "str": "幽门螺旋杆菌感染"
+                        },
+                        {
+                            "value": 5,
+                            "str": "HIV感染"
+                        },
+                        {
+                            "value": 6,
+                            "str": "以上均没有"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你是否曾被医生明确诊断为以下内分泌系统疾病",
+                    "type": "checkbox",
+                    "questionNum": "B04",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "1型糖尿病"
+                        },
+                        {
+                            "value": 2,
+                            "str": "2型糖尿病"
+                        },
+                        {
+                            "value": 3,
+                            "str": "多囊卵巢综合征"
+                        },
+                        {
+                            "value": 4,
+                            "str": "多毛症"
+                        },
+                        {
+                            "value": 5,
+                            "str": "甲状腺功能减退"
+                        },
+                        {
+                            "value": 6,
+                            "str": "甲状腺功能亢进"
+                        },
+                        {
+                            "value": 7,
+                            "str": "Graves病"
+                        },
+                        {
+                            "value": 8,
+                            "str": "桥本甲状腺炎"
+                        },
+                        {
+                            "value": 9,
+                            "str": "以上都没有"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你是否曾被医生明确诊断为以下免疫性疾病",
+                    "type": "checkbox",
+                    "questionNum": "B05",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "狼疮"
+                        },
+                        {
+                            "value": 2,
+                            "str": "硬皮病"
+                        },
+                        {
+                            "value": 3,
+                            "str": "干燥综合征"
+                        },
+                        {
+                            "value": 4,
+                            "str": "葡萄膜炎"
+                        },
+                        {
+                            "value": 5,
+                            "str": "类风湿性关节炎"
+                        },
+                        {
+                            "value": 6,
+                            "str": "皮肌炎"
+                        },
+                        {
+                            "value": 7,
+                            "str": "以上都没有"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你是否曾被医生明确诊断为以下血液系统疾病",
+                    "type": "checkbox",
+                    "questionNum": "B06",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "缺铁性贫血"
+                        },
+                        {
+                            "value": 2,
+                            "str": "巨幼红细胞性贫血"
+                        },
+                        {
+                            "value": 3,
+                            "str": "地中海贫血"
+                        },
+                        {
+                            "value": 4,
+                            "str": "贫血，原因不详"
+                        },
+                        {
+                            "value": 5,
+                            "str": "血友病"
+                        },
+                        {
+                            "value": 6,
+                            "str": "白血病"
+                        },
+                        {
+                            "value": 7,
+                            "str": "淋巴瘤"
+                        },
+                        {
+                            "value": 8,
+                            "str": "以上均没有"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你是否曾被医生明确诊断为以下精神、神经疾病",
+                    "type": "checkbox",
+                    "questionNum": "B07",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "多动症与注意缺陷障碍"
+                        },
+                        {
+                            "value": 2,
+                            "str": "抑郁症"
+                        },
+                        {
+                            "value": 3,
+                            "str": "焦虑症"
+                        },
+                        {
+                            "value": 4,
+                            "str": "精神分裂症"
+                        },
+                        {
+                            "value": 5,
+                            "str": "以上均没有"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你是否有过食物过敏的现象？",
+                    "type": "checkbox",
+                    "questionNum": "B08",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "没有"
+                        },
+                        {
+                            "value": 1,
+                            "str": "牛奶"
+                        },
+                        {
+                            "value": 2,
+                            "str": "鸡蛋"
+                        },
+                        {
+                            "value": 4,
+                            "str": "小麦"
+                        },
+                        {
+                            "value": 5,
+                            "str": "大豆"
+                        },
+                        {
+                            "value": 6,
+                            "str": "鱼类"
+                        },
+                        {
+                            "value": 7,
+                            "str": "花生"
+                        },
+                        {
+                            "value": 8,
+                            "str": "坚果"
+                        },
+                        {
+                            "value": 9,
+                            "str": "甲壳类(虾蟹类)"
+                        },
+                        {
+                            "value": 10,
+                            "str": "水果"
+                        },
+                        {
+                            "value": 99,
+                            "str": "不清楚对何种食物过敏"
+                        },
+                        {
+                            "value": 98,
+                            "str": "其他",
+                            "inputText": true
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你是否有过药物过敏的现象？",
+                    "type": "checkbox",
+                    "questionNum": "B09",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "没有"
+                        },
+                        {
+                            "value": 1,
+                            "str": "抗生素类"
+                        },
+                        {
+                            "value": 2,
+                            "str": "非甾体类抗炎药和镇痛药（NASIDS）"
+                        },
+                        {
+                            "value": 4,
+                            "str": "造影剂"
+                        },
+                        {
+                            "value": 5,
+                            "str": "麻醉剂"
+                        },
+                        {
+                            "value": 6,
+                            "str": "抗惊厥药物"
+                        },
+                        {
+                            "value": 7,
+                            "str": "化疗类药物"
+                        },
+                        {
+                            "value": 99,
+                            "str": "不清楚对何种药物过敏"
+                        },
+                        {
+                            "value": 98,
+                            "str": "其他",
+                            "inputText": true
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你是否有过对周围环境过敏的现象？",
+                    "type": "checkbox",
+                    "questionNum": "B10",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "没有"
+                        },
+                        {
+                            "value": 1,
+                            "str": "尘螨"
+                        },
+                        {
+                            "value": 2,
+                            "str": "霉菌"
+                        },
+                        {
+                            "value": 4,
+                            "str": "动物皮毛"
+                        },
+                        {
+                            "value": 5,
+                            "str": "花粉"
+                        },
+                        {
+                            "value": 6,
+                            "str": "屋尘"
+                        },
+                        {
+                            "value": 7,
+                            "str": "蟑螂"
+                        },
+                        {
+                            "value": 99,
+                            "str": "不清楚对何种物质过敏"
+                        },
+                        {
+                            "value": 98,
+                            "str": "其他",
+                            "inputText": true
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你是否有过度的虫咬反应？",
+                    "type": "radio",
+                    "questionNum": "B11",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "没有"
+                        },
+                        {
+                            "value": 1,
+                            "str": "有"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "过去的12个月里，你有没有在家里养狗、猫或其他小毛绒动物如兔子、豚鼠、仓鼠等？",
+                    "type": "checkbox",
+                    "questionNum": "B12",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "没有"
+                        },
+                        {
+                            "value": 1,
+                            "str": "狗"
+                        },
+                        {
+                            "value": 2,
+                            "str": "猫"
+                        },
+                        {
+                            "value": 99,
+                            "str": "不清楚"
+                        },
+                        {
+                            "value": 98,
+                            "str": "其他毛绒动物",
+                            "inputText": true
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你是否有长期的化学物质有密切接触史？",
+                    "type": "checkbox",
+                    "questionNum": "B13",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "没有"
+                        },
+                        {
+                            "value": 1,
+                            "str": "甲醛"
+                        },
+                        {
+                            "value": 2,
+                            "str": "汽油"
+                        },
+                        {
+                            "value": 99,
+                            "str": "不清楚"
+                        },
+                        {
+                            "value": 98,
+                            "str": "其他",
+                            "inputText": true
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近2周内，你是否几乎每天都使用或服用了药物？",
+                    "type": "checkbox",
+                    "questionNum": "B14",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "没有"
+                        },
+                        {
+                            "value": 1,
+                            "str": "抗生素"
+                        },
+                        {
+                            "value": 2,
+                            "str": "非甾体类抗炎药和镇痛药（NASIDS）"
+                        },
+                        {
+                            "value": 3,
+                            "str": "激素"
+                        },
+                        {
+                            "value": 4,
+                            "str": "抗结核药物"
+                        },
+                        {
+                            "value": 99,
+                            "str": "不清楚"
+                        },
+                        {
+                            "value": 98,
+                            "str": "其他",
+                            "inputText": true
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你出生后是否母乳喂养",
+                    "type": "radio",
+                    "questionNum": "B15",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "否"
+                        },
+                        {
+                            "value": 1,
+                            "str": "是"
+                        },
+                        {
+                            "value": 99,
+                            "str": "不清楚"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你在学龄前期（7岁前）感冒发烧的频率是",
+                    "type": "radio",
+                    "questionNum": "B16",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "很少"
+                        },
+                        {
+                            "value": 2,
+                            "str": "偶尔（一年中有几次）"
+                        },
+                        {
+                            "value": 3,
+                            "str": "经常（几乎每个月）"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你在学龄前期感冒发烧的处理方式一般是",
+                    "type": "checkbox",
+                    "questionNum": "B17",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "不理会"
+                        },
+                        {
+                            "value": 2,
+                            "str": "喝水、休息"
+                        },
+                        {
+                            "value": 3,
+                            "str": "吃消炎药"
+                        },
+                        {
+                            "value": 4,
+                            "str": "吃中成药"
+                        },
+                        {
+                            "value": 5,
+                            "str": "吊水"
+                        },
+                        {
+                            "value": 98,
+                            "str": "其他",
+                            "inputText":true
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你在学龄前期感冒发烧时，通常是怎么好转的",
+                    "type": "radio",
+                    "questionNum": "B18",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "通常不吃药能自愈"
+                        },
+                        {
+                            "value": 2,
+                            "str": "偶尔需要吃药（抗生素）"
+                        },
+                        {
+                            "value": 3,
+                            "str": "通常需要吃药才能好转"
+                        },
+                        {
+                            "value": 4,
+                            "str": "通常需要“吊水”才能好转"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你是否发生过自愿的性行为（不等同于性取向）",
+                    "type": "radio",
+                    "questionNum": "B19",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "没有"
+                        },
+                        {
+                            "value": 2,
+                            "str": "有，与异性"
+                        },
+                        {
+                            "value": 3,
+                            "str": "有，与同性"
+                        },
+                        {
+                            "value": 4,
+                            "str": "与异性、同性都有"
+                        },
+                        {
+                            "value": 99,
+                            "str": "不便告知"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "曾经是否有人在你不愿意的情况下强迫你进行性行为",
+                    "type": "radio",
+                    "questionNum": "B20",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "没有"
+                        },
+                        {
+                            "value": 2,
+                            "str": "有"
+                        },
+                        {
+                            "value": 99,
+                            "str": "不便告知"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "近一年，你受过几次伤",
+                    "type": "radio",
+                    "questionNum": "B21",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "没有受伤"
+                        },
+                        {
+                            "value": 1,
+                            "str": "到医疗机构就诊"
+                        },
+                        {
+                            "value": 2,
+                            "str": "自行处理或由他人做简单处理"
+                        },
+                        {
+                            "value": 3,
+                            "str": "卧床或休学半天及以上。伤害原因包括交通事故、摔伤、砸伤、撞击伤、咬伤、溺水、烧/烫伤、中毒、他伤、性侵犯、自伤"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一次受伤的原因是",
+                    "type": "radio",
+                    "questionNum": "B22",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "近一年未曾受伤"
+                        },
+                        {
+                            "value": 2,
+                            "str": "意外伤害"
+                        },
+                        {
+                            "value": 3,
+                            "str": "自伤"
+                        },
+                        {
+                            "value": 4,
+                            "str": "他伤"
+                        },
+                        {
+                            "value": 5,
+                            "str": "意图不明"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "近一年内，你受伤的外部原因包括哪些",
+                    "type": "checkbox",
+                    "questionNum": "B23",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "交通事故"
+                        },
+                        {
+                            "value": 2,
+                            "str": "摔伤/砸伤"
+                        },
+                        {
+                            "value": 3,
+                            "str": "中毒"
+                        },
+                        {
+                            "value": 4,
+                            "str": "窒息/悬吊"
+                        },
+                        {
+                            "value": 5,
+                            "str": "动物/昆虫咬伤"
+                        },
+                        {
+                            "value": 6,
+                            "str": "烧/烫伤"
+                        },
+                        {
+                            "value": 7,
+                            "str": "溺水"
+                        },
+                        {
+                            "value": 8,
+                            "str": "电击伤"
+                        },
+                        {
+                            "value": 9,
+                            "str": "刺/割伤"
+                        },
+                        {
+                            "value": 10,
+                            "str": "爆炸伤"
+                        },
+                        {
+                            "value": 11,
+                            "str": "自然灾害"
+                        },
+                        {
+                            "value": 12,
+                            "str": "医疗伤害"
+                        },
+                        {
+                            "value": 13,
+                            "str": "性侵犯"
+                        },
+                        {
+                            "value": 98,
+                            "str": "其他",
+                            "inputText":true
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一次伤后处理方法是",
+                    "type": "radio",
+                    "questionNum": "B24",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "住院治疗"
+                        },
+                        {
+                            "value": 2,
+                            "str": "到医院门/急诊诊治"
+                        },
+                        {
+                            "value": 3,
+                            "str": "他人或自行处理"
+                        },
+                        {
+                            "value": 4,
+                            "str": "未行处理"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "过去一年因为伤害造成的总医疗费用为_元",
+                    "type": "text",
+                    "questionNum": "B25"
+                },
+                {
+                    "title": "过去一年因为伤害总共休息了几天",
+                    "type": "radio",
+                    "questionNum": "B26",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "未休息"
+                        },
+                        {
+                            "value": 2,
+                            "str": "半天"
+                        },
+                        {
+                            "value": 3,
+                            "str": "一天"
+                        },
+                        {
+                            "value": 4,
+                            "str": "超过一天"
+                        }
+                    ],
+                    "data": []
+                }
+            ]
+        },
+        {
+            "name": "生活习惯",
+            "data": [
+                {
+                    "title": "你是否吸烟（吸烟：指每天至少吸一支烟并持续半年以上）？",
+                    "type": "radio",
+                    "questionNum": "C01",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "几乎不吸"
+                        },
+                        {
+                            "value": 1,
+                            "str": "< 1包/天"
+                        },
+                        {
+                            "value": 2,
+                            "str": "1~2包/天"
+                        },
+                        {
+                            "value": 3,
+                            "str": "> 2包/天"
+                        }
+                    ],
+                    "data": [
+                        {
+                            "selectValue": [
+                                1,
+                                2,
+                                3
+                            ],
+                            "data": [
+                                {
+                                    "title": "到目前为止，你总共吸烟多少年了",
+                                    "type": "radio",
+                                    "questionNum": "C02",
+                                    "answers": [
+                                        {
+                                            "value": 1,
+                                            "str": "< 1年"
+                                        },
+                                        {
+                                            "value": 2,
+                                            "str": "1~3年"
+                                        },
+                                        {
+                                            "value": 3,
+                                            "str": "> 3年"
+                                        }
+                                    ],
+                                    "data": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "最近一个月，你被动吸烟的频率是（被动吸烟：指生活或工作环境中他人吸烟而造成的、非主动的吸入烟雾）？",
+                    "type": "radio",
+                    "questionNum": "C03",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "几乎没有"
+                        },
+                        {
+                            "value": 1,
+                            "str": "< 1天/周"
+                        },
+                        {
+                            "value": 2,
+                            "str": "1~2天/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "3~5天/周"
+                        },
+                        {
+                            "value": 4,
+                            "str": "6~7天/周"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你被动吸烟多少年了？",
+                    "type": "radio",
+                    "questionNum": "C04",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "几乎没有"
+                        },
+                        {
+                            "value": 1,
+                            "str": "< 2年"
+                        },
+                        {
+                            "value": 2,
+                            "str": "2~3年"
+                        },
+                        {
+                            "value": 3,
+                            "str": "4~6年"
+                        },
+                        {
+                            "value": 4,
+                            "str": "> 6年"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你饮酒的频率是（饮酒：指每周至少饮酒一次以上，且持续至少半年）？",
+                    "type": "radio",
+                    "questionNum": "C05",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "几乎不饮"
+                        },
+                        {
+                            "value": 1,
+                            "str": "1次/周"
+                        },
+                        {
+                            "value": 2,
+                            "str": "2~4次/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "5~7次/周"
+                        },
+                        {
+                            "value": 4,
+                            "str": "8~10次/周"
+                        },
+                        {
+                            "value": 5,
+                            "str": "> 10次/周"
+                        }
+                    ],
+                    "data": [
+                        {
+                            "selectValue": [
+                                1,
+                                2,
+                                3,
+                                4,
+                                5
+                            ],
+                            "data": [
+                                {
+                                    "title": "你饮酒多少年了？",
+                                    "type": "radio",
+                                    "questionNum": "C06",
+                                    "answers": [
+                                        {
+                                            "value": 0,
+                                            "str": "几乎不饮"
+                                        },
+                                        {
+                                            "value": 1,
+                                            "str": "< 1年"
+                                        },
+                                        {
+                                            "value": 2,
+                                            "str": "1~3年"
+                                        },
+                                        {
+                                            "value": 3,
+                                            "str": "4~5年"
+                                        },
+                                        {
+                                            "value": 4,
+                                            "str": "> 5年"
+                                        }
+                                    ],
+                                    "data": []
+                                },
+                                {
+                                    "title": "你主要喝什么酒？",
+                                    "type": "checkbox",
+                                    "questionNum": "C07",
+                                    "answers": [
+                                        {
+                                            "value": 1,
+                                            "str": "白酒"
+                                        },
+                                        {
+                                            "value": 2,
+                                            "str": "啤酒"
+                                        },
+                                        {
+                                            "value": 3,
+                                            "str": "红酒"
+                                        },
+                                        {
+                                            "value": 4,
+                                            "str": "黄酒"
+                                        },
+                                        {
+                                            "value": 5,
+                                            "str": "甜酒"
+                                        }
+                                    ],
+                                    "data": []
+                                },
+                                {
+                                    "title": "你平均每次的饮酒量是多少？",
+                                    "type": "checkbox",
+                                    "questionNum": "C08",
+                                    "answers": [
+                                        {
+                                            "value": 1,
+                                            "str": "较少（1瓶啤酒，或1两其他酒）"
+                                        },
+                                        {
+                                            "value": 2,
+                                            "str": "一般（2瓶啤酒，或2两其他酒）"
+                                        },
+                                        {
+                                            "value": 3,
+                                            "str": "较多（3瓶啤酒，或3两其他酒）"
+                                        },
+                                        {
+                                            "value": 4,
+                                            "str": "很多（超过3瓶啤酒，或超过3两其他酒）"
+                                        }
+                                    ],
+                                    "data": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "你喝什么茶（喝茶：指每周至少喝一次茶，不含茶饮料）？",
+                    "type": "checkbox",
+                    "questionNum": "C09",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "几乎不喝"
+                        },
+                        {
+                            "value": 1,
+                            "str": "红茶"
+                        },
+                        {
+                            "value": 2,
+                            "str": "绿茶"
+                        },
+                        {
+                            "value": 3,
+                            "str": "花茶"
+                        },
+                        {
+                            "value": 98,
+                            "str": "其他",
+                            "inputText": true
+                        }
+                    ],
+                    "data": [
+                        {
+                            "selectValue": [
+                                1,
+                                2,
+                                3,
+                                98
+                            ],
+                            "data": [
+                                {
+                                    "title": "最近一年，你每周大概有几天喝茶",
+                                    "type": "radio",
+                                    "questionNum": "C10",
+                                    "answers": [
+                                        {
+                                            "value": 1,
+                                            "str": "1天/周"
+                                        },
+                                        {
+                                            "value": 2,
+                                            "str": "2~3天/周"
+                                        },
+                                        {
+                                            "value": 3,
+                                            "str": "4~5天/周"
+                                        },
+                                        {
+                                            "value": 4,
+                                            "str": "6~7天/周"
+                                        }
+                                    ],
+                                    "data": []
+                                },
+                                {
+                                    "title": "你每周喝几次碳酸饮料（可乐、雪碧、芬达等）？",
+                                    "type": "radio",
+                                    "questionNum": "C11",
+                                    
+                                    "answers": [
+                                        {
+                                            "value": 0,
+                                            "str": "几乎不喝"
+                                        },
+                                        {
+                                            "value": 1,
+                                            "str": "1~2次/周"
+                                        },
+                                        {
+                                            "value": 2,
+                                            "str": "3~6次/周"
+                                        },
+                                        {
+                                            "value": 3,
+                                            "str": "≥7次/周"
+                                        }
+                                    ],
+                                    "data": []
+                                },
+                                {
+                                    "title": "最近一年，你每周喝几次瓶装或现做的茶饮料，例如冰红茶、冰绿茶、奶茶等",
+                                    "type": "radio",
+                                    "questionNum": "C12",
+                                    
+                                    "answers": [
+                                        {
+                                            "value": 0,
+                                            "str": "几乎不喝"
+                                        },
+                                        {
+                                            "value": 1,
+                                            "str": "1~2次/周"
+                                        },
+                                        {
+                                            "value": 2,
+                                            "str": "3~6次/周"
+                                        },
+                                        {
+                                            "value": 3,
+                                            "str": "≥7次/周"
+                                        }
+                                    ],
+                                    "data": []
+                                },
+                                {
+                                    "title": "最近一年，你每周喝几次果汁或果味饮料？",
+                                    "type": "radio",
+                                    "questionNum": "C13",
+                                    
+                                    "answers": [
+                                        {
+                                            "value": 0,
+                                            "str": "几乎不喝"
+                                        },
+                                        {
+                                            "value": 1,
+                                            "str": "1~2次/周"
+                                        },
+                                        {
+                                            "value": 2,
+                                            "str": "3~6次/周"
+                                        },
+                                        {
+                                            "value": 3,
+                                            "str": "≥7次/周"
+                                        }
+                                    ],
+                                    "data": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "你每周喝几次牛奶？（不包括咖啡或茶中的少量牛奶，不包括豆浆，包括脱脂/无脂/低脂/全脂奶粉，脱脂乳和无乳糖的牛奶）？",
+                    "type": "radio",
+                    "questionNum": "C14",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "几乎不喝"
+                        },
+                        {
+                            "value": 1,
+                            "str": "1~2次/周"
+                        },
+                        {
+                            "value": 2,
+                            "str": "3~6次/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "≥7次/周"
+                        }
+                    ],
+                    "data": [
+                       
+                    ]
+                },
+                {
+                    "title": "最近一年，你每周喝几次酸奶",
+                    "type": "radio",
+                    "questionNum": "C15",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "几乎不喝"
+                        },
+                        {
+                            "value": 1,
+                            "str": "1~2次/周"
+                        },
+                        {
+                            "value": 2,
+                            "str": "3~6次/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "≥7次/周"
+                        }
+                    ],
+                    "data": [
+                       
+                    ]
+                },
+                {
+                    "title": "你每日饮水量是多少（一升大概是两瓶常规矿泉水；包括喝茶，但不包括喝饮料）？",
+                    "type": "radio",
+                    "questionNum": "C16",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "< 1升"
+                        },
+                        {
+                            "value": 2,
+                            "str": "1~1.5升"
+                        },
+                        {
+                            "value": 3,
+                            "str": "1.6~2升"
+                        },
+                        {
+                            "value": 4,
+                            "str": "2.1~2.5升"
+                        },
+                        {
+                            "value": 5,
+                            "str": "> 2.5升"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一年，你每周有几天吃辣椒？",
+                    "type": "radio",
+                    "questionNum": "C17",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "不吃或极少吃"
+                        },
+                        {
+                            "value": 2,
+                            "str": "<1天/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "1~3天/周"
+                        },
+                        {
+                            "value": 4,
+                            "str": "1~3天/周"
+                        },
+                        {
+                            "value": 5,
+                            "str": "每天都吃"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一年，你吃辣椒的主要种类是",
+                    "type": "radio",
+                    "questionNum": "C18",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "新鲜辣椒"
+                        },
+                        {
+                            "value": 2,
+                            "str": "腌制辣椒"
+                        },
+                        {
+                            "value": 3,
+                            "str": "干辣椒"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一年，你的饮食口味是否偏辣",
+                    "type": "radio",
+                    "questionNum": "C19",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "不辣"
+                        },
+                        {
+                            "value": 2,
+                            "str": "微辣"
+                        },
+                        {
+                            "value": 3,
+                            "str": "中等辣"
+                        },
+                        {
+                            "value": 4,
+                            "str": "很辣"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一年，你吃牛羊肉的频率是",
+                    "type": "radio",
+                    "questionNum": "C20",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "不吃或极少吃"
+                        },
+                        {
+                            "value": 2,
+                            "str": "<1天/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "1~3天/周"
+                        },
+                        {
+                            "value": 4,
+                            "str": "4~6天/周"
+                        },
+                        {
+                            "value": 5,
+                            "str": "每天都吃"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一年，你吃猪肉的频率是",
+                    "type": "radio",
+                    "questionNum": "C21",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "不吃或极少吃"
+                        },
+                        {
+                            "value": 2,
+                            "str": "<1天/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "1~3天/周"
+                        },
+                        {
+                            "value": 4,
+                            "str": "4~6天/周"
+                        },
+                        {
+                            "value": 5,
+                            "str": "每天都吃"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一年，你吃禽肉（鸡、鸭、鹅等）的频率是",
+                    "type": "radio",
+                    "questionNum": "C22",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "不吃或极少吃"
+                        },
+                        {
+                            "value": 2,
+                            "str": "<1天/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "1~3天/周"
+                        },
+                        {
+                            "value": 4,
+                            "str": "4~6天/周"
+                        },
+                        {
+                            "value": 5,
+                            "str": "每天都吃"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一年，你吃水产品（鱼、虾、贝等）的频率是",
+                    "type": "radio",
+                    "questionNum": "C23",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "不吃或极少吃"
+                        },
+                        {
+                            "value": 2,
+                            "str": "<1天/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "1~3天/周"
+                        },
+                        {
+                            "value": 4,
+                            "str": "4~6天/周"
+                        },
+                        {
+                            "value": 5,
+                            "str": "每天都吃"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一年，你是否经常服用营养补充剂",
+                    "type": "checkbox",
+                    "questionNum": "C24",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "没有"
+                        },
+                        {
+                            "value": 2,
+                            "str": "B族维生素（含叶酸）"
+                        },
+                        {
+                            "value": 3,
+                            "str": "维生素C"
+                        },
+                        {
+                            "value": 4,
+                            "str": "鱼油/维生素E"
+                        },
+                        {
+                            "value": 5,
+                            "str": "钙镁等矿物质"
+                        },
+                        {
+                            "value": 6,
+                            "str": "蛋白质粉"
+                        },
+                        {
+                            "value": 7,
+                            "str": "植物提取物"
+                        },
+                        {
+                            "value": 98,
+                            "str": "钙镁等矿物质",
+                            "inputText":true
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你平时解大便规律吗？",
+                    "type": "radio",
+                    "questionNum": "C25",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "2次/天"
+                        },
+                        {
+                            "value": 2,
+                            "str": "1次/天"
+                        },
+                        {
+                            "value": 3,
+                            "str": "隔天排1次"
+                        },
+                        {
+                            "value": 4,
+                            "str": "常便秘"
+                        },
+                        {
+                            "value": 5,
+                            "str": "没有规律"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你平时大便的形态通常是",
+                    "type": "radioImg",
+                    "questionNum": "C26",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "一颗颗硬球（很难通过）",
+                            "img":"c26_2.png"
+                        },
+                        {
+                            "value": 3,
+                            "str": "香肠状，但表面有裂痕",
+                            "img":"c26_3.png"
+                        },
+                        {
+                            "value": 4,
+                            "str": "像香肠或蛇一样，且表面很光滑",
+                            "img":"c26_4.png"
+                        },
+                        {
+                            "value": 5,
+                            "str": "断边光滑的柔软块状（容易通过）",
+                            "img":"c26_5.png"
+                        },
+                        {
+                            "value": 6,
+                            "str": "粗边蓬松块，糊状大便",
+                            "img":"c26_6.png"
+                        },
+                        {
+                            "value": 7,
+                            "str": "水状，无固体块（完全液体）",
+                            "img":"c26_7.png"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一年里，你参加哪些体育活动？",
+                    "type": "checkbox",
+                    "questionNum": "C27",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "基本不锻炼或仅偶尔轻微运动，平均每月少于2次"
+                        },
+                        {
+                            "value": 2,
+                            "str": "散步"
+                        },
+                        {
+                            "value": 3,
+                            "str": "慢跑"
+                        },
+                        {
+                            "value": 4,
+                            "str": "骑车（含健身单车）"
+                        },
+                        {
+                            "value": 5,
+                            "str": "打球（足球、篮球、羽毛球等）"
+                        },
+                        {
+                            "value": 6,
+                            "str": "跳舞"
+                        },
+                        {
+                            "value": 7,
+                            "str": "游泳"
+                        },
+                        {
+                            "value": 98,
+                            "str": "其他运动",
+                            "inputText": true
+                        }
+                    ],
+                    "data": [
+                        
+                    ]
+                },
+                {
+                    "title": "到目前为止，你已坚持锻炼多少年？",
+                    "type": "radio",
+                    "questionNum": "C28",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "基本不锻炼或仅偶尔轻微运动"
+                        },
+                        {
+                            "value": 1,
+                            "str": "< 1年"
+                        },
+                        {
+                            "value": 2,
+                            "str": "1~3年"
+                        },
+                        {
+                            "value": 3,
+                            "str": "4~5年"
+                        },
+                        {
+                            "value": 4,
+                            "str": "> 5年"
+                        }
+                    ],
+                    "data": [
+                        {
+                            "selectValue": [
+                                1,
+                                2,
+                                3,
+                                4
+                            ],
+                            "data": [
+                                
+                                {
+                                    "title": "你每周锻炼多长时间？",
+                                    "type": "radio",
+                                    "questionNum": "C29",
+                                    "answers": [
+                                        {
+                                            "value": 1,
+                                            "str": "< 1小时"
+                                        },
+                                        {
+                                            "value": 2,
+                                            "str": "1~2小时"
+                                        },
+                                        {
+                                            "value": 3,
+                                            "str": "3~6小时"
+                                        },
+                                        {
+                                            "value": 4,
+                                            "str": "≥7小时"
+                                        }
+                                    ],
+                                    "data": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "你平均每天坐着玩手机/看电视/用电脑的时间是多久？",
+                    "type": "radio",
+                    "questionNum": "C30",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "几乎为零"
+                        },
+                        {
+                            "value": 1,
+                            "str": "< 1小时"
+                        },
+                        {
+                            "value": 2,
+                            "str": "1~2小时"
+                        },
+                        {
+                            "value": 3,
+                            "str": "3~6小时"
+                        },
+                        {
+                            "value": 4,
+                            "str": "≥7小时"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你家冬天取暖的工具是",
+                    "type": "checkbox",
+                    "questionNum": "C31",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "居民区的地下管道燃气"
+                        },
+                        {
+                            "value": 1,
+                            "str": "瓶装或罐装或液化气"
+                        },
+                        {
+                            "value": 2,
+                            "str": "电"
+                        },
+                        {
+                            "value": 3,
+                            "str": "太阳能"
+                        },
+                        {
+                            "value": 4,
+                            "str": "煤油"
+                        },
+                        {
+                            "value": 5,
+                            "str": "煤炭"
+                        },
+                        {
+                            "value": 6,
+                            "str": "木材"
+                        },
+                        {
+                            "value": 98,
+                            "str": "其他",
+                            "inputText":true
+                        }
+                    ],
+                    "data": []
+                }
+            ]
+        },
+        {
+            "name": "睡眠与情绪",
+            "data": [
+                {
+                    "title": "近1个月，晚上上床睡觉通常为_点钟（24小时制）",
+                    "type": "text",
+                    "required": "required",
+                    "questionNum": "D01"
+                },
+                {
+                    "title": "你从上床到入睡，通常需要_分钟",
+                    "type": "text",
+                    "required": "required",
+                    "questionNum": "D02"
+                },
+                {
+                    "title": "近1个月，通常早上_点钟起床（24小时制）",
+                    "type": "text",
+                    "required": "required",
+                    "questionNum": "D03"
+                },
+                {
+                    "title": "每夜通常实际睡眠_小时（不等于卧床时间）",
+                    "type": "text",
+                    "required": "required",
+                    "questionNum": "D04"
+                },
+                {
+                    "title": "最近一个月，你是否有入睡困难（30分钟内不能入睡）？",
+                    "type": "radio",
+                    "questionNum": "D05",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "无"
+                        },
+                        {
+                            "value": 1,
+                            "str": "1次/周"
+                        },
+                        {
+                            "value": 2,
+                            "str": "2次/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "≥3次/周"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一个月，你是否夜间容易醒来或早醒？",
+                    "type": "radio",
+                    "questionNum": "D06",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "无"
+                        },
+                        {
+                            "value": 1,
+                            "str": "1次/周"
+                        },
+                        {
+                            "value": 2,
+                            "str": "2次/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "≥3次/周"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一个月，你入睡后是否需要去厕所？",
+                    "type": "radio",
+                    "questionNum": "D07",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "无"
+                        },
+                        {
+                            "value": 1,
+                            "str": "1次/周"
+                        },
+                        {
+                            "value": 2,
+                            "str": "2次/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "≥3次/周"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一个月，你睡觉时是否感到呼吸不畅？",
+                    "type": "radio",
+                    "questionNum": "D08",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "无"
+                        },
+                        {
+                            "value": 1,
+                            "str": "1次/周"
+                        },
+                        {
+                            "value": 2,
+                            "str": "2次/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "≥3次/周"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一个月，你睡觉时是否咳嗽或鼾声高？",
+                    "type": "radio",
+                    "questionNum": "D09",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "无"
+                        },
+                        {
+                            "value": 1,
+                            "str": "1次/周"
+                        },
+                        {
+                            "value": 2,
+                            "str": "2次/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "≥3次/周"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一个月，你睡觉时是否感觉冷？",
+                    "type": "radio",
+                    "questionNum": "D10",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "无"
+                        },
+                        {
+                            "value": 1,
+                            "str": "1次/周"
+                        },
+                        {
+                            "value": 2,
+                            "str": "2次/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "≥3次/周"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一个月，你睡觉时是否感觉热？",
+                    "type": "radio",
+                    "questionNum": "D11",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "无"
+                        },
+                        {
+                            "value": 1,
+                            "str": "1次/周"
+                        },
+                        {
+                            "value": 2,
+                            "str": "2次/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "≥3次/周"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一个月，你是否做噩梦？",
+                    "type": "radio",
+                    "questionNum": "D12",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "无"
+                        },
+                        {
+                            "value": 1,
+                            "str": "1次/周"
+                        },
+                        {
+                            "value": 2,
+                            "str": "2次/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "≥3次/周"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一个月，你睡觉时是否感到疼痛不适？",
+                    "type": "radio",
+                    "questionNum": "D13",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "无"
+                        },
+                        {
+                            "value": 1,
+                            "str": "1次/周"
+                        },
+                        {
+                            "value": 2,
+                            "str": "2次/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "≥3次/周"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一个月，你是否还有其他影响睡眠的问题？",
+                    "type": "radio",
+                    "questionNum": "D14",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "无"
+                        },
+                        {
+                            "value": 1,
+                            "str": "1次/周"
+                        },
+                        {
+                            "value": 2,
+                            "str": "2次/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "≥3次/周"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一个月，你使用药物催眠的情况是？",
+                    "type": "radio",
+                    "questionNum": "D15",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "无"
+                        },
+                        {
+                            "value": 1,
+                            "str": "1次/周"
+                        },
+                        {
+                            "value": 2,
+                            "str": "2次/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "≥3次/周"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近一个月，你是否常感到困倦？",
+                    "type": "radio",
+                    "questionNum": "D16",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "无"
+                        },
+                        {
+                            "value": 1,
+                            "str": "1次/周"
+                        },
+                        {
+                            "value": 2,
+                            "str": "2次/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "≥3次/周"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近两周，你是否做事时提不起劲或没有兴趣？",
+                    "type": "radio",
+                    "questionNum": "D17",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "完全不会"
+                        },
+                        {
+                            "value": 1,
+                            "str": "好几天"
+                        },
+                        {
+                            "value": 2,
+                            "str": "一半以上天数"
+                        },
+                        {
+                            "value": 3,
+                            "str": "几乎每天"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近两周，你是否感到情绪低落、沮丧或绝望？",
+                    "type": "radio",
+                    "questionNum": "D18",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "完全不会"
+                        },
+                        {
+                            "value": 1,
+                            "str": "好几天"
+                        },
+                        {
+                            "value": 2,
+                            "str": "一半以上天数"
+                        },
+                        {
+                            "value": 3,
+                            "str": "几乎每天"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近两周，你是否感觉紧张、焦虑或急切？",
+                    "type": "radio",
+                    "questionNum": "D19",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "完全不会"
+                        },
+                        {
+                            "value": 1,
+                            "str": "好几天"
+                        },
+                        {
+                            "value": 2,
+                            "str": "一半以上天数"
+                        },
+                        {
+                            "value": 3,
+                            "str": "几乎每天"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近两周，你是否不能够停止或控制担忧？",
+                    "type": "radio",
+                    "questionNum": "D20",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "完全不会"
+                        },
+                        {
+                            "value": 1,
+                            "str": "好几天"
+                        },
+                        {
+                            "value": 2,
+                            "str": "一半以上天数"
+                        },
+                        {
+                            "value": 3,
+                            "str": "几乎每天"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "最近两周，你是否有“不如死掉”或用某种方式伤害自己的念头？",
+                    "type": "radio",
+                    "questionNum": "D21",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "完全不会"
+                        },
+                        {
+                            "value": 1,
+                            "str": "好几天"
+                        },
+                        {
+                            "value": 2,
+                            "str": "一半以上天数"
+                        },
+                        {
+                            "value": 3,
+                            "str": "几乎每天"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你的活动能力如何？",
+                    "type": "radio",
+                    "questionNum": "D22",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "走路没问题"
+                        },
+                        {
+                            "value": 2,
+                            "str": "走路有些问题"
+                        },
+                        {
+                            "value": 3,
+                            "str": "卧床不起"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你的自理能力如何",
+                    "type": "radio",
+                    "questionNum": "D23",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "可以完全自理"
+                        },
+                        {
+                            "value": 2,
+                            "str": "洗澡和穿衣服有些问题"
+                        },
+                        {
+                            "value": 3,
+                            "str": "无法自己洗澡和穿衣服"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你的日常活动如何",
+                    "type": "radio",
+                    "questionNum": "D24",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "进行日常活动没问题"
+                        },
+                        {
+                            "value": 2,
+                            "str": "进行日常活动有些问题"
+                        },
+                        {
+                            "value": 3,
+                            "str": "无法进行日常活动"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你是否感到疼痛或不舒服",
+                    "type": "radio",
+                    "questionNum": "D25",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "没有疼痛/不舒服"
+                        },
+                        {
+                            "value": 1,
+                            "str": "有中度疼痛/不舒服"
+                        },
+                        {
+                            "value": 2,
+                            "str": "极度疼痛/不舒服"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你是否感到焦虑或抑郁",
+                    "type": "radio",
+                    "questionNum": "D26",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "不焦虑/抑郁"
+                        },
+                        {
+                            "value": 1,
+                            "str": "轻度焦虑/抑郁"
+                        },
+                        {
+                            "value": 2,
+                            "str": "中度焦虑/抑郁"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "请逐条阅读以下内容，并勾选以下所有与你符合的选项",
+                    "type": "checkbox",
+                    "questionNum": "D27",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "经常不能密切关注细节，或者在作业、工作或其他活动中犯粗心大意的错误（例如，忽视或遗漏细节，工作不精确）"
+                        },
+                        {
+                            "value": 2,
+                            "str": "在任务或游戏活动中，经常难以维持注意力（例如，在听课、对话或长时间的阅读中难以维持注意力）"
+                        },
+                        {
+                            "value": 3,
+                            "str": "当别人对其直接讲话时，经常看起来没有在听（例如，即使在没有任何明显干扰的情况下，也会显得心不在焉）"
+                        },
+                        {
+                            "value": 4,
+                            "str": "经常不遵循指示以至于无法完成作业、家务及工作中的职责（例如，可以开始执行任务，但是很快就失去注意力，容易分神）"
+                        },
+                        {
+                            "value": 5,
+                            "str": "经常难以组织任务和活动（例如，难以管理有条理的任务；难以把材料或物品放得整整齐齐；凌乱，工作无头绪；不良的时间管理；不能遵守截止日期）"
+                        },
+                        {
+                            "value": 6,
+                            "str": "经常回避、厌恶或不情愿从事那些需要精神上持续努力的任务（例如，学校作业或家庭作业；准备报告、完成表格或阅读冗长的文章）"
+                        },
+                        {
+                            "value": 7,
+                            "str": "经常丢失任务或活动所需的物品（例如，例如学校的资料、铅笔、书、工具，钥匙、钱包、手机、文件、眼镜等）"
+                        },
+                        {
+                            "value": 8,
+                            "str": "经常容易被外界的刺激分神（外界刺激包括不相关的想法）"
+                        },
+                        {
+                            "value": 9,
+                            "str": "经常在日常活动中忘记事情（例如，做家务、外出办事、回电话、付账单、约会等）"
+                        },
+                        {
+                            "value": 0,
+                            "str": "上述情况我都没有"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "请逐条阅读以下内容，并勾选以下所有与你符合的选项",
+                    "type": "checkbox",
+                    "questionNum": "D28",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "经常手脚动个不停或在座位上扭动"
+                        },
+                        {
+                            "value": 2,
+                            "str": "当被期待坐在座位上时却经常离开座位（例如，离开他/她在教室、办公室或其它工作的场所，或是在其他情况下需要保持原地的位置）"
+                        },
+                        {
+                            "value": 3,
+                            "str": "经常感到坐立不安"
+                        },
+                        {
+                            "value": 4,
+                            "str": "经常无法安静地玩耍或从事休闲活动"
+                        },
+                        {
+                            "value": 5,
+                            "str": "经常“忙个不停”（例如，如在餐厅、会议中无法长时间保持不动或者觉得不舒服；可能被他人感受为坐立不安或难以跟上）"
+                        },
+                        {
+                            "value": 6,
+                            "str": "经常讲话过多、喋喋不休"
+                        },
+                        {
+                            "value": 7,
+                            "str": "经常在提问还没有讲完之前就把答案脱口而出（例如，接别人的话；不能等待交谈的顺序）"
+                        },
+                        {
+                            "value": 8,
+                            "str": "经常难以等待轮到他/她（例如，当排队等待时）"
+                        },
+                        {
+                            "value": 9,
+                            "str": "经常打断或侵扰他人（例如，插入别人的对话、游戏或活动；没有询问或未经允许使用他人东西；侵扰或接管他人正在做的事情）"
+                        },
+                        {
+                            "value": 0,
+                            "str": "上述情况我都没有"
+                        }
+                    ],
+                    "data": []
+                }
+            ]
+        },
+        {
+            "name": "皮肤健康",
+            "data": [
+                {
+                    "title": "春秋季时，你每周洗澡的频率是？",
+                    "type": "radio",
+                    "questionNum": "E01",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "≤1次/周"
+                        },
+                        {
+                            "value": 2,
+                            "str": "2~4次/周"
+                        },
+                        {
+                            "value": 3,
+                            "str": "5~7次/周"
+                        },
+                        {
+                            "value": 4,
+                            "str": "8~10次/周"
+                        },
+                        {
+                            "value": 5,
+                            "str": "> 10次/周"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "春秋季时，你每次洗澡需要多长时间?",
+                    "type": "radio",
+                    "questionNum": "E02",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "< 5分钟"
+                        },
+                        {
+                            "value": 2,
+                            "str": "5~10分钟"
+                        },
+                        {
+                            "value": 3,
+                            "str": "11~20分钟"
+                        },
+                        {
+                            "value": 4,
+                            "str": "20~30分钟"
+                        },
+                        {
+                            "value": 5,
+                            "str": "> 30分钟"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你常使用的沐浴用品种类有哪些?",
+                    "type": "checkbox",
+                    "questionNum": "E03",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "无"
+                        },
+                        {
+                            "value": 1,
+                            "str": "肥皂"
+                        },
+                        {
+                            "value": 2,
+                            "str": "沐浴露"
+                        },
+                        {
+                            "value": 98,
+                            "str": "其他",
+                            "inputText": true
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "春秋季时，你洗澡的水温是?",
+                    "type": "radio",
+                    "questionNum": "E04",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "低温（<35度）"
+                        },
+                        {
+                            "value": 2,
+                            "str": "接近体温（35~40度）"
+                        },
+                        {
+                            "value": 3,
+                            "str": "高温（> 40度）"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "秋冬季你是否每日全身使用润肤乳?",
+                    "type": "radio",
+                    "questionNum": "E05",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "是"
+                        },
+                        {
+                            "value": 0,
+                            "str": "否"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你使用洁面产品（如洗面奶、洁面皂）的频率是?",
+                    "type": "radio",
+                    "questionNum": "E06",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "不使用"
+                        },
+                        {
+                            "value": 1,
+                            "str": "偶尔使用"
+                        },
+                        {
+                            "value": 2,
+                            "str": "1次/天"
+                        },
+                        {
+                            "value": 3,
+                            "str": "≥2次/天"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你每天洗手的频率是?",
+                    "type": "radio",
+                    "questionNum": "E07",
+                    "required": "required",
+                    "answers": [                        
+                        {
+                            "value": 1,
+                            "str": "0~5次/天"
+                        },
+                        {
+                            "value": 2,
+                            "str": "6~10次/天"
+                        },
+                        {
+                            "value": 3,
+                            "str": "11~15次/天"
+                        },
+                        {
+                            "value": 4,
+                            "str": ">15次/天"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你最常用哪种清洁剂洗手?",
+                    "type": "radio",
+                    "questionNum": "E08",
+                    "required": "required",
+                    "answers": [   
+                        {
+                            "value": 0,
+                            "str": "无"
+                        },                     
+                        {
+                            "value": 1,
+                            "str": "肥皂/香皂"
+                        },
+                        {
+                            "value": 2,
+                            "str": "洗手液"
+                        },
+                        {
+                            "value": 98,
+                            "str": "其他",
+                            "inputText":true
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "近一年，你的手部是否出现过与以下图片相似的情况?",
+                    "type": "radioImg",
+                    "questionNum": "E09",
+                    "required": "required",
+                    "answers": [   
+                        {
+                            "value": 1,
+                            "str": "A",
+                            "img":"E09_1.png"
+                        },
+                        {
+                            "value": 2,
+                            "str": "B",
+                            "img":"E09_2.png"
+                        },
+                        {
+                            "value": 3,
+                            "str": "C",
+                            "img":"E09_3.png"
+                        },
+                        {
+                            "value": 4,
+                            "str": "D",
+                            "img":"E09_4.png"
+                            
+                        },
+                        {
+                            "value": 5,
+                            "str": "E",
+                            "img":"E09_5.png"
+                        },
+                        {
+                            "value": 6,
+                            "str": "F",
+                            "img":"E09_6.png"
+                        },
+                        {
+                            "value": 0,
+                            "str": "G以上情况均没有",
+                            "img":"",
+                            "text":"G以上情况均没有"
+                            
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "近两年，你洗头的频率是?",
+                    "type": "radio",
+                    "questionNum": "E10",
+                    "required": "required",
+                    "answers": [                        
+                        {
+                            "value": 1,
+                            "str": "每天2次及以上"
+                        },
+                        {
+                            "value": 2,
+                            "str": "每天1次"
+                        },
+                        {
+                            "value": 3,
+                            "str": "隔天1次"
+                        },
+                        {
+                            "value": 4,
+                            "str": "隔2~6天1次"
+                        },
+                        {
+                            "value": 5,
+                            "str": "每周1次或间隔更久"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "近两年，你洗头用品的种类是",
+                    "type": "radio",
+                    "questionNum": "E11",
+                    "required": "required",
+                    "answers": [      
+                        {
+                            "value": 0,
+                            "str": "无"
+                        },                  
+                        {
+                            "value": 1,
+                            "str": "洗发露"
+                        },
+                        {
+                            "value": 2,
+                            "str": "洗发露+护发素"
+                        },
+                        {
+                            "value": 98,
+                            "str": "其他",
+                            "inpitText":true
+                        }
+                        
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "近两年，你是否使用护发/美发产品",
+                    "type": "checkbox",
+                    "questionNum": "E12",
+                    "required": "required",
+                    "answers": [      
+                        {
+                            "value": 0,
+                            "str": "无"
+                        },                  
+                        {
+                            "value": 1,
+                            "str": "精油、弹力素等护发产品"
+                        },
+                        {
+                            "value": 2,
+                            "str": "发胶等美发产品"
+                        },
+                        {
+                            "value": 98,
+                            "str": "其他",
+                            "inpitText":true
+                        }
+                        
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "近两年，你染发的频率是",
+                    "type": "radio",
+                    "questionNum": "E13",
+                    "required": "required",
+                    "answers": [      
+                                       
+                        {
+                            "value": 1,
+                            "str": "每月1次及以上 "
+                        },
+                        {
+                            "value": 2,
+                            "str": "2~6月1次"
+                        },
+                        {
+                            "value": 3,
+                            "str": "7~11月1次"
+                            
+                        },
+                        {
+                            "value": 4,
+                            "str": "每年1次及以下"
+                            
+                        },
+                        {
+                            "value": 0,
+                            "str": "从不"
+                        }
+                        
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "近两年，你烫发的频率是",
+                    "type": "radio",
+                    "questionNum": "E14",
+                    "required": "required",
+                    "answers": [      
+                                       
+                        {
+                            "value": 1,
+                            "str": "每月1次及以上 "
+                        },
+                        {
+                            "value": 2,
+                            "str": "2~6月1次"
+                        },
+                        {
+                            "value": 3,
+                            "str": "7~11月1次"
+                            
+                        },
+                        {
+                            "value": 4,
+                            "str": "每年1次及以下"
+                            
+                        },
+                        {
+                            "value": 0,
+                            "str": "从不"
+                        }
+                        
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你是否曾长期从事户外工作或活动（每天>4小时，持续3个月）",
+                    "type": "radio",
+                    "questionNum": "E15",
+                    "required": "required",
+                    "answers": [      
+                                       
+                        {
+                            "value": 1,
+                            "str": "是 "
+                        },
+                        {
+                            "value": 0,
+                            "str": "否"
+                        }
+                        
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "近一年，你每日暴露于日光下的时长是?",
+                    "type": "radio",
+                    "questionNum": "E16",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "几乎无（< 1小时/天）"
+                        },
+                        {
+                            "value": 2,
+                            "str": "稍长时间（1~2小时/天）"
+                        },
+                        {
+                            "value": 3,
+                            "str": "较长时间（3~4小时/天）"
+                        },
+                        {
+                            "value": 4,
+                            "str": "长时间（> 4小时/天）"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "晴天外出时，你会采取哪些紫外线防护措施?",
+                    "type": "checkbox",
+                    "questionNum": "E17",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "从不防护"
+                        },
+                        {
+                            "value": 1,
+                            "str": "防晒霜"
+                        },
+                        {
+                            "value": 2,
+                            "str": "物理防护（帽子、太阳镜、遮阳伞）"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "如果一周都是晴天且都需要外出，那么你紫外线防护的频率是?",
+                    "type": "radio",
+                    "questionNum": "E18",
+                    "answers": [
+                        {
+                            "value": 0,
+                            "str": "从不防护"
+                        },
+                        {
+                            "value": 1,
+                            "str": "1~2次/周"
+                        },
+                        {
+                            "value": 2,
+                            "str": "3~5次/周"
+                        },
+                        {
+                            "value": 2,
+                            "str": "几乎每天"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你是否有阳光灼伤史?",
+                    "type": "radio",
+                    "questionNum": "E19",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "是"
+                        },
+                        {
+                            "value": 2,
+                            "str": "否"
+                        }
+                    ],
+                    "data": []
+                },
+                
+       
+                {
+                    "title": "你会如何评价你没有暴露在阳光下的皮肤的颜色?",
+                    "type": "radioImg",
+                    "questionNum": "E20",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "A",
+                            "img":"E20_1.png"
+                        },
+                        {
+                            "value": 2,
+                            "str": "B",
+                            "img":"E20_2.png"
+                        },
+                        {
+                            "value": 3,
+                            "str": "C",
+                            "img":"E20_3.png"
+                        },
+                        {
+                            "value": 4,
+                            "str": "D",
+                            "img":"E20_4.png"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "想象一下，在炎炎夏日的中午，你在烈日下走了30分钟，却没有使用防晒霜或衣服来保护皮肤，可能会出现以下哪种情况?",
+                    "type": "radio",
+                    "questionNum": "E21",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "不会灼伤"
+                        },
+                        {
+                            "value": 2,
+                            "str": "轻度灼伤"
+                        },
+                        {
+                            "value": 3,
+                            "str": "中度灼伤"
+                        },
+                        {
+                            "value": 4,
+                            "str": "重度灼伤"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "想象你在户外晒了几个星期的太阳，如果没有使用防晒霜或什么手段保护你的皮肤，可能会出现以下哪种情况?",
+                    "type": "radio",
+                    "questionNum": "E22",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "不会晒黑"
+                        },
+                        {
+                            "value": 2,
+                            "str": "轻度晒黑"
+                        },
+                        {
+                            "value": 3,
+                            "str": "中度晒黑"
+                        },
+                        {
+                            "value": 4,
+                            "str": "重度晒黑"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你是否有经常性的皮肤瘙痒，程度如何（0为完全不痒，10为极度瘙痒）？",
+                    "type": "range",
+                    "questionNum": "E23",
+                    "required": "required",
+                    "min": 0,
+                    "max": 10,
+                    "other": {
+                        "value": "99",
+                        "str": "不清楚"
+                    },
+                    "data": []
+                },
+                {
+                    "title": "你是否有经常性的皮肤疼痛，程度如何（0为完全不痛，10为极度疼痛）？",
+                    "type": "range",
+                    "questionNum": "E24",
+                    "required": "required",
+                    "min": 0,
+                    "max": 10,
+                    "other": {
+                        "value": "99",
+                        "str": "不清楚"
+                    },
+                    "data": []
+                }
+            ]
+        },
+        {
+            "name": "女性健康史",
+            "data": [
+                {
+                    "title": "性别是否为女性?",
+                    "type": "radio",
+                    "questionNum": "F01",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "是"
+                        },
+                        {
+                            "value": 0,
+                            "str": "否"
+                        }
+                    ],
+                    "data": [
+                        {
+                            "selectValue": [
+                                1
+                            ],
+                            "data": [
+                                {
+                                    "title": "你月经初潮的年纪_岁",
+                                    "type": "text",
+                                    "questionNum": "F02"
+                                },
+                                {
+                                    "title": "过去一年，你的月经周期是",
+                                    "type": "radio",
+                                    "questionNum": "F03",
+                                    "answers": [
+                                        {
+                                            "value": 1,
+                                            "str": "<21天（月经频发）"
+                                        },
+                                        {
+                                            "value": 2,
+                                            "str": "21~35天（正常月经）"
+                                        },
+                                        {
+                                            "value": 3,
+                                            "str": ">35天（月经稀发）"
+                                        },
+                                        {
+                                            "value": 4,
+                                            "str": "不规律（1年内月经周期波动≥7天）"
+                                        }
+                                    ],
+                                    "data": []
+                                },
+                                {
+                                    "title": "近一年，你的月经量是",
+                                    "type": "radio",
+                                    "questionNum": "F04",
+                                    "answers": [
+                                        {
+                                            "value": 1,
+                                            "str": "<5ml（整个经期量极少，月经过少）"
+                                        },
+                                        {
+                                            "value": 2,
+                                            "str": "5~80ml（正常月经量）"
+                                        },
+                                        {
+                                            "value": 3,
+                                            "str": ">80ml（经量过多，整个经期使用卫生巾/棉条完全湿润量≥4片/条）"
+                                        },
+                                        {
+                                            "value": 4,
+                                            "str": "不规律"
+                                        }
+                                    ],
+                                    "data": []
+                                },
+                                {
+                                    "title": "近一年，你的月经是否规律",
+                                    "type": "radio",
+                                    "questionNum": "F05",
+                                    "answers": [
+                                        {
+                                            "value": 1,
+                                            "str": "<3天（经期过短）"
+                                        },
+                                        {
+                                            "value": 2,
+                                            "str": "3~7天（经期正常）"
+                                        },
+                                        {
+                                            "value": 3,
+                                            "str": ">7天（经期延长）"
+                                        },
+                                        {
+                                            "value": 4,
+                                            "str": "不规律"
+                                        }
+                                    ],
+                                    "data": []
+                                },
+                                {
+                                    "title": "是否吃过避孕药？",
+                                    "type": "radio",
+                                    "questionNum": "F06",
+                                    "answers": [
+                                        {
+                                            "value": 1,
+                                            "str": "是"
+                                        },
+                                        {
+                                            "value": 0,
+                                            "str": "否"
+                                        }
+                                    ],
+                                    "data": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

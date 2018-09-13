@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>中南大学新生调研</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/jquery.steps.css">
+    <link rel="stylesheet" href="../js/layui/css/layui.css">
+    <link rel="stylesheet" href="../css/cascader.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="index">
+    <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="content layout" id="contents">
+        <div id="wizard">
+            <div class="header">
+                <h3 class="question_name" id="questionName">
+                </h3>
+                <p class="question_text" id="questionText">
+                    <!-- 我爱北京天安门,天安门上太阳升,伟大领袖毛主席,指引我们向前进! -->
+                </p>
+                <hr class="layui-bg-blue">
+            </div>
+        </div>
+    </div>
+    <script src="../js/modernizr-2.6.2.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.cookie-1.3.1.js"></script>
+    <script src="../js/jquery.steps.js"></script>
+    <script src="../js/layui/layui.js"></script>
+    <script src="../js/config.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/common.js"></script>
+
+    <script>
+        $(function () {
+            const lookImgUrl = "../";
+            let studentId = getRequest().studentId;
+            if (studentId) {
+                var $wizard = $("#wizard");
+                var $questionName = $("#questionName");
+                var $questionText = $("#questionText");
+                var accessToken = $.cookie('accessToken');
+                var getAnswerUrl = GLOBAL_AJAX_URL.getAnswer + "?studentId=" + studentId;
+                $.ajax({
+                    type: "get",
+                    url: getAnswerUrl,
+                    headers: {
+                        Authorization: "Bearer " + accessToken
+                    },
+                    dataType: "json",
+                    contentType: 'application/json',
+                    success: function (res) {
+
+
+
+
+                        if (res.code == "200") {
+                            var data = JSON.parse(res.data.resolveJson);
+
+                            if (data && data.length > 0) {
+
+                                $questionName.html("新生健康促进五年规划---调查问卷")
+                                $.each(data, function (i, item) {
+                                    var item = item;
+                                    var itemData = item.data;
+                                    if (itemData && itemData.length > 0) {
+                                        if (i === 0) {
+                                            var $section = $('<section>'
+                                                + '<form class="layui-form" id="form_' + i + '">'
+                                                + '<ul class="unversity_ul" id="unversity' + i + '"></ul>'
+                                                + '</ul>'
+                                                + '<div class="layui-input-block continue_box">'
+                                                + '<button class="layui-btn continue_btn" lay-submit lay-filter="next">下一步</button>'
+                                                + '</div>'
+                                                + '</form>'
+                                                + '</section>');
+                                            var $ul = $section.find(".unversity_ul");
+
+                                            renderSort(itemData, $ul);
+                                            $wizard.append('<h2>' + item.name + '</h2>').append($section);
+                                        } else if (i === (data.length - 1)) {
+                                            var $section = $('<section>'
+                                                + '<form class="layui-form" id="form_' + i + '">'
+                                                + '<ul class="unversity_ul" id="unversity' + i + '"></ul>'
+                                                + '</ul>'
+                                                + '<div class="layui-input-block continue_box">'
+                                                + '<button class="layui-btn continue_btn" lay-submit lay-filter="pre">上一步</button>'
+                                                + '<button class="layui-btn continue_btn" lay-submit lay-filter="finish">完成</button>'
+                                                + '</div>'
+                                                + '</form>'
+                                                + '</section>');
+                                            var $ul = $section.find(".unversity_ul");
+                                            renderSort(itemData, $ul);
+                                            $wizard.append('<h2>' + item.name + '</h2>').append($section);
+                                        } else {
+
+                                            var $section = $('<section>'
+                                                + '<form class="layui-form" id="form_' + i + '">'
+                                                + '<ul class="unversity_ul" id="unversity' + i + '"></ul>'
+                                                + '</ul>'
+                                                + '<div class="layui-input-block continue_box">'
+                                                + '<button class="layui-btn continue_btn" lay-submit lay-filter="pre">上一步</button>'
+                                                + '<button class="layui-btn continue_btn" lay-submit lay-filter="next">下一步</button>'
+                                                + '</div>'
+                                                + '</form>'
+                                                + '</section>');
+                                            var $ul = $section.find(".unversity_ul");
+                                            renderSort(itemData, $ul, lookImgUrl);
+                                            $wizard.append('<h2>' + item.name + '</h2>').append($section);
+
+                                        }
+
+                                    }
+
+
+
+                                })
+
+                            }
+
+                        };
+                        // steps
+                        $wizard.steps({
+                            headerTag: "h2",
+                            bodyTag: "section",
+                            transitionEffect: "fade",
+                            enableAllSteps:true,
+                            onStepChanging: function (event, currentIndex, newIndex) {
+
+                                return true;
+                            },
+                            onStepChanged: function () {
+
+                            },
+                            onFinished: function () {
+
+                            },
+                            labels: {
+                                cancel: "Cancel",
+                                current: "current step:",
+                                pagination: "Pagination",
+                                finish: "完成",
+                                next: "下一步",
+                                previous: "上一步",
+                                loading: "Loading ..."
+                            },
+                            startIndex: 0
+                        });
+
+                        // layui
+                        layui.config({
+                            base: "../js/layui/lay/mymodules/"
+                        }).use(['form', 'layer', 'cascader'], function () {
+                            var form = layui.form;
+                            var layer = layui.layer;
+                            var cascader = layui.cascader;
+                            var $items = $(".layui-form-item");
+
+                            $.each($items, function (i, item) {
+                                var $item = $(item);
+                                if ($item.attr("itemtype") === "select") {
+
+
+                                    var data = JSON.parse($item.attr("setData"));
+                                    var $selectInput = $item.find(".select_input");
+                                    
+
+                                    if ($item.attr("dataValue")) {
+                                        var dataValue = JSON.parse($item.attr("dataValue"));
+                                        cascader({
+                                            elem: $selectInput,
+                                            data: data,
+                                            value: dataValue,
+                                            success: function (data, elem, textStr) {
+                                                // console.log(data);
+                                                if (data.length > 0) {
+                                                    elem.attr("dataValue", JSON.stringify(data)).attr("textStr", textStr)
+                                                }
+                                            }
+                                        })
+                                    }else {
+                                        cascader({
+                                            elem: $selectInput,
+                                            data: data,
+                                            success: function (data, elem, textStr) {
+                                                // console.log(data);
+                                                if (data.length > 0) {
+                                                    elem.attr("dataValue", JSON.stringify(data)).attr("textStr", textStr)
+                                                }
+                                            }
+                                        })
+                                    }
+
+                                }
+                            })
+
+
+
+
+                            // form.verify(ZNverify)
+
+                            form.on('radio(filter_ul)', function (data) {
+                                var value = data.value;
+                                var obj = data.elem;
+                                var uls = $(obj).parents(".answer_box").siblings("ul");
+                                var chindUls = uls.find("ul");
+                                $.each(uls, function (i, ul) {
+                                    var $ul = $(ul);
+                                    var selectvalue = $ul.attr("selectvalue").split("-");
+                                    var flag = $.inArray((value + ""), selectvalue)
+                                    if (flag > -1) {
+                                        chindUls.addClass("layui-hide");
+                                        uls.addClass("layui-hide");
+                                        $ul.removeClass("layui-hide");
+                                        return false
+                                    } else {
+                                        $ul.find("input").prop("checked", false);
+                                        $ul.find(".layui-form-checkbox").removeClass(" layui-form-checked")
+                                        var textIpt = $ul.find("input");
+                                        $.each(textIpt, function (j, input) {
+                                            var itemIpt = $(input);
+                                            if (itemIpt.attr("type") === "text") {
+                                                itemIpt.val("");
+                                            }
+                                        })
+                                        $ul.addClass("layui-hide");
+                                    }
+                                })
+                            })
+                            // checkbox  form ul hide
+                            form.on('checkbox(filter_ul)', function (data) {
+                                var value = data.value;
+                                var obj = data.elem;
+                                var uls = $(obj).parents(".answer_box").siblings("ul");
+                                if (data.elem.checked) {
+                                    $.each(uls, function (i, ul) {
+                                        var $ul = $(ul);
+                                        var selectvalue = $ul.attr("selectvalue");
+                                        if (selectvalue && selectvalue === value) {
+                                            $ul.removeClass("layui-hide");
+                                            return false
+                                        }
+                                    })
+                                } else {
+                                    $.each(uls, function (i, ul) {
+                                        var $ul = $(ul);
+                                        var selectvalue = $ul.attr("selectvalue");
+                                        if (selectvalue && selectvalue === value) {
+                                            $ul.find("input").prop("checked", false);
+                                            $ul.find(".layui-form-checkbox").removeClass(" layui-form-checked")
+                                            $ul.find("input").val("");
+                                            $ul.addClass("layui-hide");
+                                            return false
+                                        }
+                                    })
+                                }
+
+                            })
+
+                            // range  step  有问题 需要写在step 初始化后面 不然 change 无法触发
+                            $(".range").on("change", function () {
+                                var $self = $(this);
+                                var $rangeSpan = $self.next(".range_span");
+                                var thisValue = $self.val();
+                                $rangeSpan.text(thisValue);
+                            })
+
+                            form.on('submit(next)', function (data) {
+                                $("#wizard").steps("next")
+
+                                return false
+
+
+                            });
+                            form.on('submit(pre)', function (data) {
+                                $("#wizard").steps("previous")
+
+                                return false
+
+
+                            });
+                            form.on('submit(finish)', function (data) {
+                                layer.msg("已查看完毕")
+                                return false
+                            })
+
+
+
+
+                        });
+                    }
+                })
+
+
+
+            } else {
+                window.location.href = "../loginApp.html"
+            }
+
+
+
+
+
+
+
+
+        });
+    </script>
+</body>
+
+</html>

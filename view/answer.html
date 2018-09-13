@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,iitial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .layout {
+            padding: 10px 10px;
+        }
+
+        header {
+            border-bottom: 3px solid #2184be;
+            padding: 8px 0;
+        }
+
+        header ul {
+            height: 36px;
+            overflow: hidden;
+            padding: 0;
+        }
+
+        header ul li {
+            float: left;
+            width: 12%;
+            text-align: center;
+            height: 40px;
+        }
+
+        header ul li span {
+            display: inline-block;
+            width: 90%;
+            height: 32px;
+            line-height: 32px;
+            font-size: 14px;
+            background-color: #eee;
+            border-radius: 6px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        header ul li.visited span {
+            background-color: #9dc8e2;
+            color: #fff;
+        }
+
+        header ul li.active {
+            width: 40%;
+        }
+
+        header ul li.active span {
+            background-color: #2184be;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        span.btn {
+            font-size: 12px;
+            padding: 8px 12px;
+            background-color: pink;
+            color: #fff;
+            margin: 0 16px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        b {
+            font-weight: 400;
+        }
+
+        .item {
+            font-size: 12px;
+            padding: 8px 0;
+        }
+
+        .item label {
+            padding: 0 10px;
+        }
+
+        .item input {
+            border: 0px solid #fff;
+            outline: none;
+            width: 2rem;
+            text-align: center;
+            border-bottom: 1px solid #2184be;
+        }
+
+        .answer {
+            padding: 4px 10px;
+        }
+
+        .answer label {
+            padding: 0;
+        }
+
+        .answer label input {
+            width: 16px;
+        }
+
+        .answer label input,
+        .answer label b {
+            vertical-align: middle;
+        }
+
+        .answer label input.other {
+            width: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+
+        <header>
+            <ul class="tab-lis">
+                <li class="active visited"><span>1拉拉啊啦啦</span></li>
+                <li><span>2拉拉啊啦啦</span></li>
+                <li><span>3拉拉啊啦啦</span></li>
+                <li><span>4拉拉啊啦啦</span></li>
+                <li><span>5拉拉啊啦啦</span></li>
+                <li><span>6拉拉啊啦啦</span></li>
+            </ul>
+        </header>
+        <div class="content">
+            <ul>
+                <li>
+                    <div class="form-item">
+                        <form>
+                            <div class="item item-text">
+                                <p>01这是text米板</p>
+                                <label> <b>请作答第一道题目</b> <input type="text"><b>结束</b></label>
+                            </div>
+                            <div class="item item-radio">
+                                <p>02这是radio米板</p>
+                                <div class="answer">
+                                    <label><input type="radio" name="02" value="1"><b>男</b></label>
+                                    <label><input type="radio" name="02" value="2"><b>女</b></label>
+                                </div>
+                            </div>
+                            <div class="item item-checkbox">
+                                <p>03这是checkbox米板</p>
+                                <div class="answer">
+                                    <label><input type="checkbox" name="03" value="1"><b>answer1</b></label>
+                                    <label><input type="checkbox" name="03" value="2"><b>answer2</b></label>
+                                    <label>
+                                        <input type="checkbox" name="03" value="98">
+                                        <b>其他</b>
+                                        <input type="text" class="other">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="item item-select">
+                                <p class="answer-title">04这是select米板</p>
+                                <div class="answer">
+                                    <label>
+                                        <b>请选择</b>
+                                        <select name="04p" class="provincial">
+                                            <option >请选择</option>
+                                           
+                                        </select>
+                                        <select name="04m" class="municipal">
+                                            <option value="1">请选择</option>
+                                            
+                                        </select>
+                                        <select name="04c" class="county">
+                                            <option value="1">请选择</option>
+                                            
+                                        </select>
+                                        <div>
+                                            选择的结果是......
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </li>
+                <li>2dsdgdfgfdgfd</li>
+                <li>3dsdgdfgfdgfd</li>
+                <li>4dsdgdfgfdgfd</li>
+                <li>5dsdgdfgfdgfd</li>
+                <li>6dsdgdfgfdgfd</li>
+            </ul>
+        </div>
+
+        <footer>
+            <span class="btn btn-preo">上一步</span>
+            <span class="btn btn-next">下一步</span>
+            <span class="btn btn-subm">完成提交</span>
+        </footer>
+    </div>
+
+    <script src="../js/rem.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var data = [
+                {
+                    value: 'A',
+                    label: 'a',
+                    children: [
+                        {
+                            value: 'AA1',
+                            label: 'aa1',
+                        },
+                        {
+                            value: 'BB1',
+                            label: 'bb1'
+                        }
+                    ]
+                },
+                {
+                    value: 'B',
+                    label: 'b',
+                    children: [
+                        {
+                            value: 'AA2',
+                            label: 'aa2',
+                            children: [
+                                {
+                                    value: 'AAA3',
+                                    label: 'aaa3',
+                                    children: [
+                                        {
+                                            value: 'AAA3',
+                                            label: 'aaa3',
+                                            children: [
+                                                {
+                                                    value: 'AAA3',
+                                                    label: 'aaa3',
+                                                },
+                                                {
+                                                    value: 'BBB3',
+                                                    label: 'bbb3'
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    value: 'BBB3',
+                                    label: 'bbb3'
+                                }
+                            ]
+                        },
+                        {
+                            value: 'BB2',
+                            label: 'bb2',
+                            children: [
+                                {
+                                    value: 'AAA4',
+                                    label: 'aaa4',
+                                },
+                                {
+                                    value: 'BBB4',
+                                    label: 'bbb4'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    value: 'C',
+                    label: 'c',
+                }
+            ]
+            var $tabLlis = $(".tab-lis li");
+            var $contLis = $(".content ul").find("li");
+            $contLis.hide();
+            $($contLis[0]).show();
+            $tabLlis.on("click", function () {
+                var $self = $(this);
+                $tabLlis.removeClass("active");
+                $self.addClass("active").addClass("visited");
+                $contLis.hide();
+                $($contLis[$self.index()]).show(300);
+            });
+            var $selects = $(".item-select select");
+            var $provincial = $($selects[0]);
+            
+            $.each(data,function(i,obj){
+                var obj = obj;
+                var val = obj.value,
+                    label = obj.label;
+                var $option = $('<option value="'+ val +'">'+ label +'</option>').appendTo($provincial)
+            });
+            $provincial.on("change",function(){
+               
+                var $self = $(this);
+                var thisVal = $self.val();
+                console.log(thisVal )
+                if(thisVal==="请选择"){
+                    return fasle
+                };
+                $.each(data,function(j,obj){
+                    var obj = obj;
+                    if(obj.value == thisVal){
+                        var childrens = obj.children;
+                        console.log(childrens);
+                        var $next = $self.next();
+                        if($next && $next.length>0)
+                        
+                            $next.empty().append('<option >请选择</option>')
+                        if(childrens && childrens.length>0){
+                            $.each(childrens,function(k,children){
+                                var childrenData = children;
+                                var val = childrenData.value,
+                                    label = childrenData.label;
+                                    var $option = $('<option value="'+ val +'">'+ label +'</option>');
+                                    $self.next().append($option);
+                            })
+                        }
+                    }
+                })
+
+            })
+        })
+    </script>
+</body>
+
+</html>

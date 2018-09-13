@@ -1,0 +1,345 @@
+.hide {
+    display: none;
+}
+
+/* .layui-form-checkbox[lay-skin=primary] span{
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+} */
+.question,
+.layui-form-radio *,
+.layui-form-checkbox span  {
+    font-size: 14px;
+}
+.layui-form-radio *,
+.layui-form-checkbox span {
+    font-size: 12px;
+    max-width: 20rem;
+}
+.transparent0 {
+    color: transparent;
+}
+.layui-unselect.layui-form-radio div {
+    max-width: 19rem;
+}
+.radio_item_img_box  .layui-unselect.layui-form-radio div {
+    max-width: 5rem;
+}
+.layui-bg-blue {
+    height: 3px;
+    margin: 0;
+}
+.wizard ul.children_ul, .tabcontrol ul.children_ul {
+    width: 90%;
+    margin: 0 auto;
+    border: 2px dashed #33CC33;
+    position: relative;
+    z-index: 10;
+    padding: 6px 0px;
+}
+/*  login start */
+.login_body {
+    background: #eee;
+    overflow: hidden;
+}
+
+.login_body .layout {
+    width: 15rem;
+    margin: 20px auto;
+    padding: 50px 10px;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #EBD4D4;
+}
+.login_body .layout h3 {
+    padding: 6px;
+    height: 80px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+}
+.login_body .layout::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    right: 0;
+    top: 0;
+}
+.login_body .layout::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-width: 10px;
+    border-color: #fff;
+    border-style: solid;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+}
+.login_body .layout .layui-form-label {
+    width: 4rem;
+    text-align: right;
+}
+.login_body .layout .layui-input-block {
+    margin-left: 4rem;
+}
+.login_body .layout .btn_box {
+    text-align: center;
+    padding: 30px;
+}
+.login_body .layout .btn_box .layui-input-block {
+    margin: 0;
+}
+.login_body .layout .login_btn {
+    padding: 0;
+    width: 3rem;
+    margin: 0 20px;
+}
+/* login end */
+
+/* index start */
+.index .agree {
+    padding: 0 60px;
+}
+.index .agree h1{
+    text-align: center;
+    padding: 20px 0;
+}
+.index .agree span  {
+    font-size: 16px;
+}
+.index .agree p {
+    padding: 10px 0;
+    font-size: 16px;
+    text-indent: 2em;
+    line-height: 30px;
+}
+.index .agree .layui-input-block {
+    margin: 0;
+    text-align: center;
+}
+.index .agree .layui-input-block button {
+    margin-top: 20px;
+}
+.layui-layer-molv .layui-layer-title {
+    background: #009F1B;
+}
+.layui-input-block {
+    margin-left: 14px;
+    
+}
+.layui-input-block.continue_box {
+    text-align: center;
+    margin: 0;
+}
+.layui-input-block.continue_box button{
+    margin: 0 30px;
+}
+.layui-form input[type=checkbox], .layui-form input[type=radio], .layui-form select {
+    display: none !important;
+}
+.layui-layer-title {
+    background-color: #2184be !important;
+    color: #fff !important;
+}
+.layui-form-radio>i {
+    font-size: 14px;
+}
+.layui-form-checkbox[lay-skin=primary] i {
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+.layui-form-checkbox span {
+    text-indent: 1em;
+    text-overflow:none;
+    
+}
+.continue_btn {
+    background-color: #2184be !important;
+    color: #fff !important;
+    padding: 0px 0.3rem;
+    border-radius: 0.125rem;
+    letter-spacing:0.2rem;
+}
+.layout {
+   
+    background: #eee;
+}
+
+.wizard.vertical > .content {
+    width: 80%;
+    margin-left: 250px;
+    padding: 30px 0;
+}
+
+.wizard > .content > .body {
+    position: relative;
+    width: 100%;
+    background: #fff;
+}
+.wizard > .steps {
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    padding: 20px 0;
+    background: #fff;
+    
+}
+.wizard > .steps .current a, .wizard > .steps .current a:hover, .wizard > .steps .current a:active {
+    text-align: center;
+    /* margin: 0; */
+}
+.wizard > .steps .current a, .wizard > .steps .current a:hover, .wizard > .steps .current a:active {
+    /* margin-left: 10px; */
+}
+.wizard > .steps .done a, .wizard > .steps .done a:hover, .wizard > .steps .done a:active {
+    text-align: center;
+    /* margin: 0; */
+    /* margin-left: 10px; */
+}
+.content .header {
+    background-color: #fff;
+    width: 100%;
+    margin: 0px auto;
+}
+.content .header h3 {
+    text-align: center;
+    padding: 30px 0 10px 0;
+    font-size: 22px;
+}
+.content .header p {
+    padding: 20px;
+    text-indent: 4em;
+    font-size: 16px;
+   
+}
+.wizard > .content {
+    margin: 0;
+    margin-top: 95px;
+}
+.wizard > .content > .body input {
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid rgba(167, 161, 161, 0.9);
+    height: 36px;
+    line-height: 36px;
+    width: 80px;
+    text-align: center;
+    font-size: 12px;
+    margin-left: 16px;
+}
+.wizard > .actions {
+    text-align: center;
+    padding: 10px 30px;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    display: none;
+}
+.wizard > .actions > ul > li {
+    margin:  0 20px;
+}
+.wizard > .steps .number {
+    font-size: 18px;
+}
+.wizard > .actions > ul {
+    display: none;
+}
+.wizard > .steps > ul > li {
+    width: 12%;
+    height: 56px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.wizard > .steps > ul > li.current {
+    width: 40%;
+}
+.wizard a, .tabcontrol a {
+    text-align: center;
+}
+
+
+/*
+    调研
+*/
+
+.wizard > .content > .body input[type=range] {
+    position: relative;
+    bottom: -10px;
+    left: 0;
+    margin-right: 20px;
+    -webkit-appearance: none;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #2184be;
+    height: 18px;
+}
+.range_span {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    font-size: 16px;
+    margin: 0 40px 0 20px;
+    position: relative;
+    top: 6px;
+}
+.layui-form-item .layui-form-checkbox[lay-skin=primary]{
+    padding: 8px;;
+}
+
+.login_body .layui-form-select dl {
+    height: 150px;
+}
+
+.wizard .layui-form-label {
+    font-size: 14px;
+    text-align: left;
+    width: auto;
+}
+.wizard > .content > .body input.select_input {
+    width: 80%;
+    cursor: pointer;
+}
+
+.radio_item_img_box {
+    display: inline-block;
+    width: 47%;
+    text-align: center;
+    height: 150px;
+    line-height: 130px;
+    position: relative;
+}
+.radio_item_img_box .layui-form-radio {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.radio_item_img_box .raido_item_img {
+    width: 150px;
+    height: 90px;
+    display: inline-block;
+}
+/* .radio_item_img_box:hover, .radio_item_img_box .raido_item_img {
+    width: 220px;
+    height: 200px;
+    border: 1px solid #5D91C2;
+} */
+
+.wizard > .steps  a, .wizard > .steps  a:hover, .wizard > .steps  a:active {
+    background: #eee;
+    color: #aaa;
+    cursor: pointer;
+}
+/* index end */
