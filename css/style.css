@@ -345,6 +345,9 @@ body.index {
     cursor: pointer;
 }
 .text_answer {
+    -webkit-appearance: none;
     border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(167, 161, 161, 0.9);
 }
 /* index end */
