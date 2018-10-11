@@ -359,7 +359,7 @@ ul.urp-cascader-child {
     position: fixed;
     left: 0px;
     top: 50%;
-    margin-top: -150px;
+    margin-top: -50px;
     text-align: center;
     width: 100%;
     box-shadow: 0 2px 12px 0 #fff;
