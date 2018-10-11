@@ -350,4 +350,13 @@ body.index {
     border: none;
     border-bottom: 1px solid rgba(167, 161, 161, 0.9);
 }
+ul.urp-cascader-child {
+    width: 33%
+}
+.urp-cascader-content {
+    position: flex;
+    left: 0px;
+    top: 50%;
+    margin-top: -150px;
+}
 /* index end */
