@@ -93,7 +93,7 @@ $(function () {
                     previous: "上一步",
                     loading: "Loading ..."
                 },
-                startIndex: 0
+                startIndex: 5
             });
 
             // layui
@@ -216,7 +216,7 @@ $(function () {
                     }
                 })
                
-                // range  step  有问题 需要写在step 初始化后面 不然 change 无法触发
+                
                 $(".range").on("change", function () {
                     var $self = $(this);
                     var $rangeSpan = $self.next(".range_span");
@@ -245,13 +245,13 @@ $(function () {
 
                 });
                 form.on('submit(finish)', function (data) {
-                    // return false
+                    
                     var loadIndex = layer.load(0, { shade: [0.1, "#fff"] });//执行加载效果
                     var $items = $(".layui-form-item").not(".post_btn");
                     
                     var storageForm = $(".wizard form");
                     var lis = $(".wizard .steps ul li");
-                    // return false
+                    
                     var storageData = webSave(storageForm, lis);
                     var postArr = saveData($items);
                     let saveDataUrl = GLOBAL_AJAX_URL.saveData;

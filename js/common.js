@@ -48,8 +48,13 @@ function renderText(obj, ele) {
             $.each(answers, function (i, str) {
                 var str = str;
                 if (i !== (answers.length - 1)) {
-                    var labelInput = '<label>' + questionNum + ".  " + str + '<input type="text" name="' + questionNum + '-' + i + '" class="text_answer answered_text " lay-verify="required|number" value=' + textValue[i] + '></label> <span class="transparent0">_</span> ';
-                    tip.append(labelInput);
+                    if(i===0){
+                        var labelInput = '<label>' + questionNum + ".  " + str + '<input type="text" name="' + questionNum + '-' + i + '" class="text_answer answered_text " lay-verify="required|number" value=' + textValue[i] + '></label> <span class="transparent0">_</span> ';
+                        tip.append(labelInput);
+                    }else {
+                        var labelInput = '<label>' + str + '<input type="text" name="' + questionNum + '-' + i + '" class="text_answer answered_text " lay-verify="required|number" value=' + textValue[i] + '></label> <span class="transparent0">_</span> ';
+                        tip.append(labelInput);
+                    }
                 } else {
                     tip.append(str)
                 }
@@ -58,8 +63,14 @@ function renderText(obj, ele) {
             $.each(answers, function (i, str) {
                 var str = str;
                 if (i !== (answers.length - 1)) {
-                    var labelInput = '<label>' + questionNum + ".  " + str + '<input type="text" name="' + questionNum + '-' + i + '" class="text_answer answered_text " value=' + textValue[i] + '></label> <span class="transparent0">_</span> ';
-                    tip.append(labelInput);
+                    if(i===0){
+                        var labelInput = '<label>' + questionNum + ".  " + str + '<input type="text" name="' + questionNum + '-' + i + '" class="text_answer answered_text " value=' + textValue[i] + '></label> <span class="transparent0">_</span> ';
+                        tip.append(labelInput);
+                    }else {
+                        var labelInput = '<label>'+ str + '<input type="text" name="' + questionNum + '-' + i + '" class="text_answer answered_text " value=' + textValue[i] + '></label> <span class="transparent0">_</span> ';
+                        tip.append(labelInput);
+                    }
+                    
                 } else {
                     tip.append(str)
                 }

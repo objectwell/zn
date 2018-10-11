@@ -2,16 +2,18 @@
     display: none;
 }
 
-/* .layui-form-checkbox[lay-skin=primary] span{
-    white-space: normal;
-    word-wrap: break-word;
-    word-break: break-all;
-} */
+body.index {
+    padding: 0 10px;
+}
+.layout {
+    background: #fff;
+}
 .question,
 .layui-form-radio *,
 .layui-form-checkbox span  {
     font-size: 14px;
 }
+
 .layui-form-radio *,
 .layui-form-checkbox span {
     font-size: 12px;
@@ -24,7 +26,7 @@
     max-width: 19rem;
 }
 .radio_item_img_box  .layui-unselect.layui-form-radio div {
-    max-width: 5rem;
+    max-width: 10rem;
 }
 .layui-bg-blue {
     height: 3px;

@@ -5,30 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>中南大学新生调研Lgoin</title>
+    <title>中国大学生健康调查</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./font/iconfont.css">
     <!-- <link rel="stylesheet" href="./js/layui/css/layui.css"> -->
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <style>
         .layout .logo {
-            background-color: pink;
+            
             width: 8rem;
             margin: 1rem auto;
-            height: 6rem;
+            height: 8rem;
+        }
+        .layout .logo img {
+            width: 8rem;
+            height: 8rem;
         }
         .layout form {
             width: 100%;
             padding: 10px;
         }
+
         .layout form .item {
             margin: 0.4rem auto;
             height: 36px;
             width: 80%;
-            border: 1px solid pink;
+            border: 1px solid #1a7abe;
             border-radius: 18px;
             position: relative;
         }
+
         .layout form .item .iconfont {
             position: absolute;
             font-size: 18px;
@@ -39,31 +45,37 @@
             left: 8px;
             color: #A7A1A1;
         }
+
         .layout form .item input,
         .layout form .item select {
             width: 100%;
             border-radius: 18px;
             height: 100%;
             border: 0px;
-            padding-left: 36px; 
-            appearance:none;
-            color:#A7A1A1;
+            padding-left: 36px;
+            appearance: none;
+            color: #A7A1A1;
         }
-        
+
         .layout form .item-btn {
             border: none;
             border-radius: 0;
             text-align: center;
             margin-top: 30px;
         }
+
         .layout form .item-btn .btn {
             display: inline-block;
             width: 3rem;
             height: 36px;
             line-height: 36px;
             color: #fff;
-            background-color: pink;
+            background-color: #1a7abe;
             border-radius: 6px;
+        }
+
+        .layout form .item .universityname {
+            outline: none;
         }
     </style>
 </head>
@@ -71,7 +83,7 @@
 <body class="wx_login">
     <div class="layout">
         <div class="logo">
-                <h3>大学新生调研登录</h3>
+            <img src="./img/app_logo.png" alt="logo" title="中国大学生健康调查">
         </div>
         <form>
             <div class="item item-text item-username">
@@ -84,7 +96,7 @@
             </div>
             <div class="item item-select">
                 <i class="iconfont icon-pulldown"></i>
-                <select name="universityname">
+                <select name="universityname" class="universityname">
                         <option value="0">请选择您的学校</option>
                         <option value="1">中南大学</option>
                         <option value="2">华中科技大学</option>
@@ -103,25 +115,25 @@
     <script src="./js/jquery.cookie-1.3.1.js"></script>
     <script src="./js/config.js"></script>
     <script>
-        $(function(){
+        $(function () {
             var username,
                 usercard,
                 universityname;
-            $(".btn").on("click",function(){
+            $(".btn").on("click", function () {
                 username = $("input[name='username']").val();
                 usercard = $("input[name='usercard']").val();
                 universityname = $("select[name='universityname']").val();
-                if(!username || !usercard || universityname =="0"){
+                if (!username || !usercard || universityname == "0") {
                     alert("请填写完整")
                     return false
                 }
                 var postLogin = {
-                        fullName: username,
-                        studentId: usercard,
-                        school: {
-                            id: universityname
-                        }
+                    fullName: username,
+                    studentId: usercard,
+                    school: {
+                        id: universityname
                     }
+                }
                 var loginUrl = GLOBAL_AJAX_URL.findStudent;
                 var getTokenUrl = GLOBAL_AJAX_URL.token;
                 $.ajax({
@@ -139,7 +151,7 @@
                                 type: "post",
                                 url: loginUrl,
                                 headers: {
-                                    Authorization: "Bearer "+accessToken
+                                    Authorization: "Bearer " + accessToken
                                 },
                                 data: JSON.stringify(postLogin),
                                 dataType: "json",
@@ -148,12 +160,12 @@
                                     if (res.code === "200") {
                                         var status = res.data.investigationList[0].status;
                                         $.cookie('accessToken', accessToken, { expires: 7, path: '/' });
-                                        if(status===0){
-                                            window.location.href="./index.html?studentId="+res.data.id
-                                        }else if(status===2){
-                                            window.location.href="./view/look.html?studentId="+res.data.id
-                                        }else {
-                                            window.location.href="./index.html?studentId="+res.data.id
+                                        if (status === 0) {
+                                            window.location.href = "./index.html?studentId=" + res.data.id
+                                        } else if (status === 2) {
+                                            window.location.href = "./view/look.html?studentId=" + res.data.id
+                                        } else {
+                                            window.location.href = "./index.html?studentId=" + res.data.id
                                         }
                                     } else {
                                         alert(res.msg)
@@ -167,7 +179,7 @@
                     }
                 })
             })
-            
+
         })
     </script>
 </body>

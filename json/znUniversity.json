@@ -8,9 +8,15 @@
             "desc": "",
             "data": [
                 {
+                    "title": "你的出生日期是:_年_月_日",
+                    "type": "text",
+                    "questionNum": "A01",
+                    "required": "required"
+                },
+                {
                     "title": "就读大学前，你的住址是",
                     "type": "select",
-                    "questionNum": "A01",
+                    "questionNum": "A02",
                     "required": "required",
                     "linkageType":"proMunCounty",
                     "answers": [],
@@ -19,7 +25,7 @@
                 {
                     "title": "过去十年中，是否曾搬迁至外地（跨市）",
                     "type": "radio",
-                    "questionNum": "A02",
+                    "questionNum": "A03",
                     "required": "required",
                     "answers": [
                         {
@@ -40,7 +46,7 @@
                                 {
                                     "title": "若搬迁过，则搬迁前的住址是",
                                     "type": "select",
-                                    "questionNum": "A03",
+                                    "questionNum": "A04",
                                     "required": false,
                                     "linkageType":"proMunCounty",
                                     "answers": [],
@@ -53,7 +59,7 @@
                 {
                     "title": "性别",
                     "type": "radio",
-                    "questionNum": "A04",
+                    "questionNum": "A05",
                     "required": "required",
                     "answers": [
                         {
@@ -70,7 +76,7 @@
                 {
                     "title": "民族",
                     "type": "select",
-                    "questionNum": "A05",
+                    "questionNum": "A06",
                     "required": "required",
                     "linkageType":"nation",
                     "answers": [],
@@ -79,7 +85,7 @@
                 {
                     "title": "全家年收入",
                     "type": "radio",
-                    "questionNum": "A06",
+                    "questionNum": "A07",
                     "required": "required",
                     "answers": [
                         {
@@ -112,7 +118,7 @@
                 {
                     "title": "目前婚恋情况",
                     "type": "radio",
-                    "questionNum": "A07",
+                    "questionNum": "A08",
                     "required": "required",
                     "answers": [
                         {
@@ -136,15 +142,15 @@
                     "data": []
                 },
                 {
-                    "title": "与你共同居住超过6个月的家庭成员数是（包括自己）_?",
+                    "title": "与你共同居住超过6个月的家庭成员数是（包括自己）_",
                     "type": "text",
-                    "questionNum": "A08",
+                    "questionNum": "A09",
                     "required": "required"
                 },
                 {
                     "title": "你的家庭结构是什么",
                     "type": "radio",
-                    "questionNum": "A09",
+                    "questionNum": "A10",
                     "required": "required",
                     "answers": [
                         {
@@ -172,39 +178,6 @@
                 },
                 {
                     "title": "你父亲的文化程度",
-                    "type": "radio",
-                    "questionNum": "A10",
-                    "required": "required",
-                    "answers": [
-                        {
-                            "value": 1,
-                            "str": "小学及以下"
-                        },
-                        {
-                            "value": 2,
-                            "str": "初中"
-                        },
-                        {
-                            "value": 3,
-                            "str": "高中及中专"
-                        },
-                        {
-                            "value": 4,
-                            "str": "本科及大专"
-                        },
-                        {
-                            "value": 5,
-                            "str": "研究生及以上"
-                        },
-                        {
-                            "value": 6,
-                            "str": "不清楚"
-                        }
-                    ],
-                    "data": []
-                },
-                {
-                    "title": "你母亲的文化程度",
                     "type": "radio",
                     "questionNum": "A11",
                     "required": "required",
@@ -237,9 +210,42 @@
                     "data": []
                 },
                 {
+                    "title": "你母亲的文化程度",
+                    "type": "radio",
+                    "questionNum": "A12",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "小学及以下"
+                        },
+                        {
+                            "value": 2,
+                            "str": "初中"
+                        },
+                        {
+                            "value": 3,
+                            "str": "高中及中专"
+                        },
+                        {
+                            "value": 4,
+                            "str": "本科及大专"
+                        },
+                        {
+                            "value": 5,
+                            "str": "研究生及以上"
+                        },
+                        {
+                            "value": 6,
+                            "str": "不清楚"
+                        }
+                    ],
+                    "data": []
+                },
+                {
                     "title": "你父亲的民族",
                     "type": "select",
-                    "questionNum": "A12",
+                    "questionNum": "A13",
                     "required": "required",
                     "linkageType":"nation",
                     "answers": [],
@@ -248,7 +254,7 @@
                 {
                     "title": "你母亲的民族",
                     "type": "select",
-                    "questionNum": "A13",
+                    "questionNum": "A14",
                     "required": "required",
                     "linkageType":"nation",
                     "answers": [],
@@ -1842,32 +1848,37 @@
                     "answers": [
                         {
                             "value": 1,
-                            "str": "一颗颗硬球（很难通过）",
+                            "str": "一颗颗硬球,难通过",
+                            "img":"c26_1.png"
+                        },
+                        {
+                            "value": 2,
+                            "str": "香肠状但表面凹凸",
                             "img":"c26_2.png"
                         },
                         {
                             "value": 3,
-                            "str": "香肠状，但表面有裂痕",
+                            "str": "香肠状但表面有裂痕",
                             "img":"c26_3.png"
                         },
                         {
                             "value": 4,
-                            "str": "像香肠或蛇一样，且表面很光滑",
+                            "str": "像香肠或蛇一样,光滑",
                             "img":"c26_4.png"
                         },
                         {
                             "value": 5,
-                            "str": "断边光滑的柔软块状（容易通过）",
+                            "str": "断边光滑的柔软块状",
                             "img":"c26_5.png"
                         },
                         {
                             "value": 6,
-                            "str": "粗边蓬松块，糊状大便",
+                            "str": "粗边蓬松块糊状大便",
                             "img":"c26_6.png"
                         },
                         {
                             "value": 7,
-                            "str": "水状，无固体块（完全液体）",
+                            "str": "水状，无固体块",
                             "img":"c26_7.png"
                         }
                     ],
@@ -3248,6 +3259,7 @@
                     "title": "想象一下，在炎炎夏日的中午，你在烈日下走了30分钟，却没有使用防晒霜或衣服来保护皮肤，可能会出现以下哪种情况?",
                     "type": "radio",
                     "questionNum": "E21",
+                    "required": "required",
                     "answers": [
                         {
                             "value": 1,
@@ -3272,6 +3284,7 @@
                     "title": "想象你在户外晒了几个星期的太阳，如果没有使用防晒霜或什么手段保护你的皮肤，可能会出现以下哪种情况?",
                     "type": "radio",
                     "questionNum": "E22",
+                    "required": "required",
                     "answers": [
                         {
                             "value": 1,
@@ -3294,28 +3307,108 @@
                 },
                 {
                     "title": "你是否有经常性的皮肤瘙痒，程度如何（0为完全不痒，10为极度瘙痒）？",
-                    "type": "range",
+                    "type": "radio",
                     "questionNum": "E23",
                     "required": "required",
-                    "min": 0,
-                    "max": 10,
-                    "other": {
-                        "value": "99",
-                        "str": "不清楚"
-                    },
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "1"
+                        },
+                        {
+                            "value": 2,
+                            "str": "2"
+                        },
+                        {
+                            "value": 3,
+                            "str": "3"
+                        },
+                        {
+                            "value": 4,
+                            "str": "4"
+                        },
+                        {
+                            "value": 5,
+                            "str": "5"
+                        },
+                        {
+                            "value": 6,
+                            "str": "6"
+                        },
+                        {
+                            "value": 7,
+                            "str": "7"
+                        },
+                        {
+                            "value": 8,
+                            "str": "8"
+                        },
+                        {
+                            "value": 9,
+                            "str": "9"
+                        },
+                        {
+                            "value": 10,
+                            "str": "10"
+                        },
+                        {
+                            "value": 99,
+                            "str": "不清楚"
+                        }
+                    ],
                     "data": []
                 },
                 {
                     "title": "你是否有经常性的皮肤疼痛，程度如何（0为完全不痛，10为极度疼痛）？",
-                    "type": "range",
+                    "type": "radio",
                     "questionNum": "E24",
                     "required": "required",
-                    "min": 0,
-                    "max": 10,
-                    "other": {
-                        "value": "99",
-                        "str": "不清楚"
-                    },
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "1"
+                        },
+                        {
+                            "value": 2,
+                            "str": "2"
+                        },
+                        {
+                            "value": 3,
+                            "str": "3"
+                        },
+                        {
+                            "value": 4,
+                            "str": "4"
+                        },
+                        {
+                            "value": 5,
+                            "str": "5"
+                        },
+                        {
+                            "value": 6,
+                            "str": "6"
+                        },
+                        {
+                            "value": 7,
+                            "str": "7"
+                        },
+                        {
+                            "value": 8,
+                            "str": "8"
+                        },
+                        {
+                            "value": 9,
+                            "str": "9"
+                        },
+                        {
+                            "value": 10,
+                            "str": "10"
+                        },
+                        {
+                            "value": 99,
+                            "str": "不清楚"
+                        }
+                    ],
                     "data": []
                 }
             ]
