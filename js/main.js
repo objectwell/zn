@@ -95,7 +95,7 @@ $(function () {
                     previous: "上一步",
                     loading: "Loading ..."
                 },
-                startIndex: 5
+                startIndex: 0
             });
 
             // layui
