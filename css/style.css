@@ -344,4 +344,7 @@ body.index {
     color: #aaa;
     cursor: pointer;
 }
+.text_answer {
+    border-radius: 0;
+}
 /* index end */
