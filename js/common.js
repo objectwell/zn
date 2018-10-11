@@ -1,7 +1,5 @@
 
 
-console.log(pLinkage)
-
 // 页面渲染
 function renderSort(arr, ele, url) {
 

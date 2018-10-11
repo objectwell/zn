@@ -5,9 +5,7 @@
 body.index {
     padding: 0 10px;
 }
-.layout {
-    background: #fff;
-}
+
 .question,
 .layui-form-radio *,
 .layui-form-checkbox span  {
@@ -109,27 +107,30 @@ body.index {
 
 /* index start */
 .index .agree {
-    padding: 0 60px;
+    padding: 0 10px;
 }
 .index .agree h1{
     text-align: center;
-    padding: 20px 0;
+    padding: 12px 0;
+    font-size: 18px;
 }
 .index .agree span  {
-    font-size: 16px;
+    font-size: 14px;
 }
 .index .agree p {
-    padding: 10px 0;
-    font-size: 16px;
+    padding: 6px 0;
+    font-size: 12px;
     text-indent: 2em;
-    line-height: 30px;
+    line-height: 20px;
 }
 .index .agree .layui-input-block {
     margin: 0;
     text-align: center;
+    
 }
 .index .agree .layui-input-block button {
     margin-top: 20px;
+    padding: 0 10px;
 }
 .layui-layer-molv .layui-layer-title {
     background: #009F1B;
@@ -174,7 +175,7 @@ body.index {
 }
 .layout {
    
-    background: #eee;
+    background: #fff;
 }
 
 .wizard.vertical > .content {
@@ -227,6 +228,7 @@ body.index {
 .wizard > .content {
     margin: 0;
     margin-top: 95px;
+    background: #fff;
 }
 .wizard > .content > .body input {
     display: inline-block;
@@ -354,7 +356,7 @@ ul.urp-cascader-child {
     width: 33%
 }
 .urp-cascader-content {
-    position: flex;
+    position: fixed;
     left: 0px;
     top: 50%;
     margin-top: -150px;

@@ -67,6 +67,8 @@ $(function () {
 
                 }
 
+                
+
             };
             // steps
             $wizard.steps({
@@ -104,6 +106,7 @@ $(function () {
                 var layer = layui.layer;
                 var cascader = layui.cascader;
                 var $items = $(".layui-form-item");
+               
                 $.each($items,function(i,item){
                     var $item = $(item);
                     if($item.attr("itemtype")==="select"){
@@ -131,7 +134,7 @@ $(function () {
                     type: 1,
                     content: $("#agree"),
                     title: "新生健康促进五年规划---调查问卷",
-                    area: ['800px', '460px'],
+                    area: ['80%', '460px'],
                     shade: [0.8, '#fff'],
                     closeBtn: 0,
                     skin: 'ZNskin'
@@ -147,6 +150,7 @@ $(function () {
                     var obj = data.elem;
                     var uls = $(obj).parents(".answer_box").siblings(".children_ul");
                     var chindUls = uls.find(".children_ul");
+                   
                     $.each(uls, function (i, ul) {
                         var $ul = $(ul);
                         var selectvalue = $ul.attr("selectvalue").split("-");
