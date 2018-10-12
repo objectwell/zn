@@ -259,14 +259,14 @@ body.index {
     display: none;
 }
 .wizard > .steps > ul > li {
-    width: 12%;
+    width: 10%;
     height: 56px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 .wizard > .steps > ul > li.current {
-    width: 40%;
+    width: 34%;
 }
 .wizard a, .tabcontrol a {
     text-align: center;

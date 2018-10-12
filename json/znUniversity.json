@@ -18,7 +18,7 @@
                     "type": "select",
                     "questionNum": "A02",
                     "required": "required",
-                    "linkageType":"proMunCounty",
+                    "linkageType": "proMunCounty",
                     "answers": [],
                     "data": []
                 },
@@ -48,7 +48,7 @@
                                     "type": "select",
                                     "questionNum": "A04",
                                     "required": false,
-                                    "linkageType":"proMunCounty",
+                                    "linkageType": "proMunCounty",
                                     "answers": [],
                                     "data": []
                                 }
@@ -78,7 +78,7 @@
                     "type": "select",
                     "questionNum": "A06",
                     "required": "required",
-                    "linkageType":"nation",
+                    "linkageType": "nation",
                     "answers": [],
                     "data": []
                 },
@@ -136,7 +136,7 @@
                         {
                             "value": 98,
                             "str": "其他",
-                            "inputText":true
+                            "inputText": true
                         }
                     ],
                     "data": []
@@ -247,7 +247,7 @@
                     "type": "select",
                     "questionNum": "A13",
                     "required": "required",
-                    "linkageType":"nation",
+                    "linkageType": "nation",
                     "answers": [],
                     "data": []
                 },
@@ -256,7 +256,7 @@
                     "type": "select",
                     "questionNum": "A14",
                     "required": "required",
-                    "linkageType":"nation",
+                    "linkageType": "nation",
                     "answers": [],
                     "data": []
                 }
@@ -265,7 +265,6 @@
         {
             "name": "既往史",
             "data": [
-                
                 {
                     "title": "你是否曾被医生明确诊断为以下心血管或代谢性疾病",
                     "type": "checkbox",
@@ -857,7 +856,7 @@
                         {
                             "value": 98,
                             "str": "其他",
-                            "inputText":true
+                            "inputText": true
                         }
                     ],
                     "data": []
@@ -960,157 +959,159 @@
                             "str": "卧床或休学半天及以上。伤害原因包括交通事故、摔伤、砸伤、撞击伤、咬伤、溺水、烧/烫伤、中毒、他伤、性侵犯、自伤"
                         }
                     ],
-                    "data": []
-                },
-                {
-                    "title": "最近一次受伤的原因是",
-                    "type": "radio",
-                    "questionNum": "B22",
-                    "required": "required",
-                    "answers": [
+                    "data": [
                         {
-                            "value": 1,
-                            "str": "近一年未曾受伤"
-                        },
-                        {
-                            "value": 2,
-                            "str": "意外伤害"
-                        },
-                        {
-                            "value": 3,
-                            "str": "自伤"
-                        },
-                        {
-                            "value": 4,
-                            "str": "他伤"
-                        },
-                        {
-                            "value": 5,
-                            "str": "意图不明"
+                            "selectValue": [
+                                1,
+                                2,
+                                3
+                            ],
+                            "data": [
+                                {
+                                    "title": "最近一次受伤的原因是",
+                                    "type": "radio",
+                                    "questionNum": "B22",
+                                    "answers": [
+                                        {
+                                            "value": 2,
+                                            "str": "意外伤害"
+                                        },
+                                        {
+                                            "value": 3,
+                                            "str": "自伤"
+                                        },
+                                        {
+                                            "value": 4,
+                                            "str": "他伤"
+                                        },
+                                        {
+                                            "value": 5,
+                                            "str": "意图不明"
+                                        }
+                                    ],
+                                    "data": []
+                                },
+                                {
+                                    "title": "近一年内，你受伤的外部原因包括哪些",
+                                    "type": "checkbox",
+                                    "questionNum": "B23",
+                                    "answers": [
+                                        {
+                                            "value": 1,
+                                            "str": "交通事故"
+                                        },
+                                        {
+                                            "value": 2,
+                                            "str": "摔伤/砸伤"
+                                        },
+                                        {
+                                            "value": 3,
+                                            "str": "中毒"
+                                        },
+                                        {
+                                            "value": 4,
+                                            "str": "窒息/悬吊"
+                                        },
+                                        {
+                                            "value": 5,
+                                            "str": "动物/昆虫咬伤"
+                                        },
+                                        {
+                                            "value": 6,
+                                            "str": "烧/烫伤"
+                                        },
+                                        {
+                                            "value": 7,
+                                            "str": "溺水"
+                                        },
+                                        {
+                                            "value": 8,
+                                            "str": "电击伤"
+                                        },
+                                        {
+                                            "value": 9,
+                                            "str": "刺/割伤"
+                                        },
+                                        {
+                                            "value": 10,
+                                            "str": "爆炸伤"
+                                        },
+                                        {
+                                            "value": 11,
+                                            "str": "自然灾害"
+                                        },
+                                        {
+                                            "value": 12,
+                                            "str": "医疗伤害"
+                                        },
+                                        {
+                                            "value": 13,
+                                            "str": "性侵犯"
+                                        },
+                                        {
+                                            "value": 98,
+                                            "str": "其他",
+                                            "inputText": true
+                                        }
+                                    ],
+                                    "data": []
+                                },
+                                {
+                                    "title": "最近一次伤后处理方法是",
+                                    "type": "radio",
+                                    "questionNum": "B24",
+                                    "answers": [
+                                        {
+                                            "value": 1,
+                                            "str": "住院治疗"
+                                        },
+                                        {
+                                            "value": 2,
+                                            "str": "到医院门/急诊诊治"
+                                        },
+                                        {
+                                            "value": 3,
+                                            "str": "他人或自行处理"
+                                        },
+                                        {
+                                            "value": 4,
+                                            "str": "未行处理"
+                                        }
+                                    ],
+                                    "data": []
+                                },
+                                {
+                                    "title": "过去一年因为伤害造成的总医疗费用为(元)_",
+                                    "type": "text",
+                                    "questionNum": "B25"
+                                },
+                                {
+                                    "title": "过去一年因为伤害总共休息了几天",
+                                    "type": "radio",
+                                    "questionNum": "B26",
+                                    "answers": [
+                                        {
+                                            "value": 1,
+                                            "str": "未休息"
+                                        },
+                                        {
+                                            "value": 2,
+                                            "str": "半天"
+                                        },
+                                        {
+                                            "value": 3,
+                                            "str": "一天"
+                                        },
+                                        {
+                                            "value": 4,
+                                            "str": "超过一天"
+                                        }
+                                    ],
+                                    "data": []
+                                }
+                            ]
                         }
-                    ],
-                    "data": []
-                },
-                {
-                    "title": "近一年内，你受伤的外部原因包括哪些",
-                    "type": "checkbox",
-                    "questionNum": "B23",
-                    "required": "required",
-                    "answers": [
-                        {
-                            "value": 1,
-                            "str": "交通事故"
-                        },
-                        {
-                            "value": 2,
-                            "str": "摔伤/砸伤"
-                        },
-                        {
-                            "value": 3,
-                            "str": "中毒"
-                        },
-                        {
-                            "value": 4,
-                            "str": "窒息/悬吊"
-                        },
-                        {
-                            "value": 5,
-                            "str": "动物/昆虫咬伤"
-                        },
-                        {
-                            "value": 6,
-                            "str": "烧/烫伤"
-                        },
-                        {
-                            "value": 7,
-                            "str": "溺水"
-                        },
-                        {
-                            "value": 8,
-                            "str": "电击伤"
-                        },
-                        {
-                            "value": 9,
-                            "str": "刺/割伤"
-                        },
-                        {
-                            "value": 10,
-                            "str": "爆炸伤"
-                        },
-                        {
-                            "value": 11,
-                            "str": "自然灾害"
-                        },
-                        {
-                            "value": 12,
-                            "str": "医疗伤害"
-                        },
-                        {
-                            "value": 13,
-                            "str": "性侵犯"
-                        },
-                        {
-                            "value": 98,
-                            "str": "其他",
-                            "inputText":true
-                        }
-                    ],
-                    "data": []
-                },
-                {
-                    "title": "最近一次伤后处理方法是",
-                    "type": "radio",
-                    "questionNum": "B24",
-                    "required": "required",
-                    "answers": [
-                        {
-                            "value": 1,
-                            "str": "住院治疗"
-                        },
-                        {
-                            "value": 2,
-                            "str": "到医院门/急诊诊治"
-                        },
-                        {
-                            "value": 3,
-                            "str": "他人或自行处理"
-                        },
-                        {
-                            "value": 4,
-                            "str": "未行处理"
-                        }
-                    ],
-                    "data": []
-                },
-                {
-                    "title": "过去一年因为伤害造成的总医疗费用为(元)_",
-                    "type": "text",
-                    "questionNum": "B25"
-                },
-                {
-                    "title": "过去一年因为伤害总共休息了几天",
-                    "type": "radio",
-                    "questionNum": "B26",
-                    "required": "required",
-                    "answers": [
-                        {
-                            "value": 1,
-                            "str": "未休息"
-                        },
-                        {
-                            "value": 2,
-                            "str": "半天"
-                        },
-                        {
-                            "value": 3,
-                            "str": "一天"
-                        },
-                        {
-                            "value": 4,
-                            "str": "超过一天"
-                        }
-                    ],
-                    "data": []
+                    ]
                 }
             ]
         },
@@ -1277,10 +1278,6 @@
                                     "questionNum": "C06",
                                     "answers": [
                                         {
-                                            "value": 0,
-                                            "str": "几乎不饮"
-                                        },
-                                        {
                                             "value": 1,
                                             "str": "< 1年"
                                         },
@@ -1420,7 +1417,6 @@
                                     "title": "你每周喝几次碳酸饮料（可乐、雪碧、芬达等）？",
                                     "type": "radio",
                                     "questionNum": "C11",
-                                    
                                     "answers": [
                                         {
                                             "value": 0,
@@ -1445,7 +1441,6 @@
                                     "title": "最近一年，你每周喝几次瓶装或现做的茶饮料，例如冰红茶、冰绿茶、奶茶等",
                                     "type": "radio",
                                     "questionNum": "C12",
-                                    
                                     "answers": [
                                         {
                                             "value": 0,
@@ -1470,7 +1465,6 @@
                                     "title": "最近一年，你每周喝几次果汁或果味饮料？",
                                     "type": "radio",
                                     "questionNum": "C13",
-                                    
                                     "answers": [
                                         {
                                             "value": 0,
@@ -1518,9 +1512,7 @@
                             "str": "≥7次/周"
                         }
                     ],
-                    "data": [
-                       
-                    ]
+                    "data": []
                 },
                 {
                     "title": "最近一年，你每周喝几次酸奶",
@@ -1545,9 +1537,7 @@
                             "str": "≥7次/周"
                         }
                     ],
-                    "data": [
-                       
-                    ]
+                    "data": []
                 },
                 {
                     "title": "你每日饮水量是多少（一升大概是两瓶常规矿泉水；包括喝茶，但不包括喝饮料）？",
@@ -1598,7 +1588,7 @@
                         },
                         {
                             "value": 4,
-                            "str": "1~3天/周"
+                            "str": "4~6天/周"
                         },
                         {
                             "value": 5,
@@ -1806,7 +1796,7 @@
                         {
                             "value": 98,
                             "str": "钙镁等矿物质",
-                            "inputText":true
+                            "inputText": true
                         }
                     ],
                     "data": []
@@ -1849,37 +1839,37 @@
                         {
                             "value": 1,
                             "str": "一颗颗硬球,难通过",
-                            "img":"c26_1.png"
+                            "img": "c26_1.png"
                         },
                         {
                             "value": 2,
                             "str": "香肠状但表面凹凸",
-                            "img":"c26_2.png"
+                            "img": "c26_2.png"
                         },
                         {
                             "value": 3,
                             "str": "香肠状但表面有裂痕",
-                            "img":"c26_3.png"
+                            "img": "c26_3.png"
                         },
                         {
                             "value": 4,
                             "str": "像香肠或蛇一样,光滑",
-                            "img":"c26_4.png"
+                            "img": "c26_4.png"
                         },
                         {
                             "value": 5,
                             "str": "断边光滑的柔软块状",
-                            "img":"c26_5.png"
+                            "img": "c26_5.png"
                         },
                         {
                             "value": 6,
                             "str": "粗边蓬松块糊状大便",
-                            "img":"c26_6.png"
+                            "img": "c26_6.png"
                         },
                         {
                             "value": 7,
                             "str": "水状，无固体块",
-                            "img":"c26_7.png"
+                            "img": "c26_7.png"
                         }
                     ],
                     "data": []
@@ -1924,9 +1914,7 @@
                             "inputText": true
                         }
                     ],
-                    "data": [
-                        
-                    ]
+                    "data": []
                 },
                 {
                     "title": "到目前为止，你已坚持锻炼多少年？",
@@ -1963,7 +1951,6 @@
                                 4
                             ],
                             "data": [
-                                
                                 {
                                     "title": "你每周锻炼多长时间？",
                                     "type": "radio",
@@ -2058,7 +2045,7 @@
                         {
                             "value": 98,
                             "str": "其他",
-                            "inputText":true
+                            "inputText": true
                         }
                     ],
                     "data": []
@@ -2877,7 +2864,7 @@
                     "type": "radio",
                     "questionNum": "E07",
                     "required": "required",
-                    "answers": [                        
+                    "answers": [
                         {
                             "value": 1,
                             "str": "0~5次/天"
@@ -2902,11 +2889,11 @@
                     "type": "radio",
                     "questionNum": "E08",
                     "required": "required",
-                    "answers": [   
+                    "answers": [
                         {
                             "value": 0,
                             "str": "无"
-                        },                     
+                        },
                         {
                             "value": 1,
                             "str": "肥皂/香皂"
@@ -2918,7 +2905,7 @@
                         {
                             "value": 98,
                             "str": "其他",
-                            "inputText":true
+                            "inputText": true
                         }
                     ],
                     "data": []
@@ -2928,44 +2915,42 @@
                     "type": "radioImg",
                     "questionNum": "E09",
                     "required": "required",
-                    "answers": [   
+                    "answers": [
                         {
                             "value": 1,
                             "str": "A",
-                            "img":"E09_1.png"
+                            "img": "E09_1.png"
                         },
                         {
                             "value": 2,
                             "str": "B",
-                            "img":"E09_2.png"
+                            "img": "E09_2.png"
                         },
                         {
                             "value": 3,
                             "str": "C",
-                            "img":"E09_3.png"
+                            "img": "E09_3.png"
                         },
                         {
                             "value": 4,
                             "str": "D",
-                            "img":"E09_4.png"
-                            
+                            "img": "E09_4.png"
                         },
                         {
                             "value": 5,
                             "str": "E",
-                            "img":"E09_5.png"
+                            "img": "E09_5.png"
                         },
                         {
                             "value": 6,
                             "str": "F",
-                            "img":"E09_6.png"
+                            "img": "E09_6.png"
                         },
                         {
                             "value": 0,
                             "str": "G以上情况均没有",
-                            "img":"",
-                            "text":"G以上情况均没有"
-                            
+                            "img": "",
+                            "text": "G以上情况均没有"
                         }
                     ],
                     "data": []
@@ -2975,7 +2960,7 @@
                     "type": "radio",
                     "questionNum": "E10",
                     "required": "required",
-                    "answers": [                        
+                    "answers": [
                         {
                             "value": 1,
                             "str": "每天2次及以上"
@@ -3004,11 +2989,11 @@
                     "type": "radio",
                     "questionNum": "E11",
                     "required": "required",
-                    "answers": [      
+                    "answers": [
                         {
                             "value": 0,
                             "str": "无"
-                        },                  
+                        },
                         {
                             "value": 1,
                             "str": "洗发露"
@@ -3020,9 +3005,8 @@
                         {
                             "value": 98,
                             "str": "其他",
-                            "inpitText":true
+                            "inputText": true
                         }
-                        
                     ],
                     "data": []
                 },
@@ -3031,11 +3015,11 @@
                     "type": "checkbox",
                     "questionNum": "E12",
                     "required": "required",
-                    "answers": [      
+                    "answers": [
                         {
                             "value": 0,
                             "str": "无"
-                        },                  
+                        },
                         {
                             "value": 1,
                             "str": "精油、弹力素等护发产品"
@@ -3047,9 +3031,8 @@
                         {
                             "value": 98,
                             "str": "其他",
-                            "inpitText":true
+                            "inputText": true
                         }
-                        
                     ],
                     "data": []
                 },
@@ -3058,8 +3041,7 @@
                     "type": "radio",
                     "questionNum": "E13",
                     "required": "required",
-                    "answers": [      
-                                       
+                    "answers": [
                         {
                             "value": 1,
                             "str": "每月1次及以上 "
@@ -3071,18 +3053,15 @@
                         {
                             "value": 3,
                             "str": "7~11月1次"
-                            
                         },
                         {
                             "value": 4,
                             "str": "每年1次及以下"
-                            
                         },
                         {
                             "value": 0,
                             "str": "从不"
                         }
-                        
                     ],
                     "data": []
                 },
@@ -3091,8 +3070,7 @@
                     "type": "radio",
                     "questionNum": "E14",
                     "required": "required",
-                    "answers": [      
-                                       
+                    "answers": [
                         {
                             "value": 1,
                             "str": "每月1次及以上 "
@@ -3104,18 +3082,15 @@
                         {
                             "value": 3,
                             "str": "7~11月1次"
-                            
                         },
                         {
                             "value": 4,
                             "str": "每年1次及以下"
-                            
                         },
                         {
                             "value": 0,
                             "str": "从不"
                         }
-                        
                     ],
                     "data": []
                 },
@@ -3124,8 +3099,7 @@
                     "type": "radio",
                     "questionNum": "E15",
                     "required": "required",
-                    "answers": [      
-                                       
+                    "answers": [
                         {
                             "value": 1,
                             "str": "是 "
@@ -3134,7 +3108,6 @@
                             "value": 0,
                             "str": "否"
                         }
-                        
                     ],
                     "data": []
                 },
@@ -3224,8 +3197,6 @@
                     ],
                     "data": []
                 },
-                
-       
                 {
                     "title": "你会如何评价你没有暴露在阳光下的皮肤的颜色?",
                     "type": "radioImg",
@@ -3235,22 +3206,22 @@
                         {
                             "value": 1,
                             "str": "A",
-                            "img":"E20_1.png"
+                            "img": "E20_1.png"
                         },
                         {
                             "value": 2,
                             "str": "B",
-                            "img":"E20_2.png"
+                            "img": "E20_2.png"
                         },
                         {
                             "value": 3,
                             "str": "C",
-                            "img":"E20_3.png"
+                            "img": "E20_3.png"
                         },
                         {
                             "value": 4,
                             "str": "D",
-                            "img":"E20_4.png"
+                            "img": "E20_4.png"
                         }
                     ],
                     "data": []
@@ -3312,6 +3283,10 @@
                     "required": "required",
                     "answers": [
                         {
+                            "value": 0,
+                            "str": "0"
+                        },
+                        {
                             "value": 1,
                             "str": "1"
                         },
@@ -3365,6 +3340,10 @@
                     "required": "required",
                     "answers": [
                         {
+                            "value": 0,
+                            "str": "0"
+                        },
+                        {
                             "value": 1,
                             "str": "1"
                         },
@@ -3407,6 +3386,382 @@
                         {
                             "value": 99,
                             "str": "不清楚"
+                        }
+                    ],
+                    "data": []
+                }
+            ]
+        },
+        {
+            "name": "皮肤健康素养",
+            "data": [
+                {
+                    "title": "电影《非诚勿扰2》中的场景：李香山脱下袜子，解开缠在脚上的纱布，露出一颗黑色大痣。他告诉秦奋说，这叫黑色素瘤，是自己从小就有的黑痣变的，两周前觉得不适，去医院检查才知道已变成肿瘤，而且已经恶化成绝症。请问：黑色素瘤是一种什么疾病",
+                    "type": "radio",
+                    "questionNum": "L01",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "一种皮肤癌"
+                        },
+                        {
+                            "value": 2,
+                            "str": "一种与皮肤无关的癌"
+                        },
+                        {
+                            "value": 3,
+                            "str": "一种非癌性的皮肤疾病"
+                        },
+                        {
+                            "value": 99,
+                            "str": "不清楚"
+                        },
+                        {
+                            "value": 98,
+                            "str": "其他",
+                            "inputText": true
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "出生就有的色素痣可以变成黑色素瘤吗",
+                    "type": "radio",
+                    "questionNum": "L02",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "是"
+                        },
+                        {
+                            "value": 0,
+                            "str": "否"
+                        },
+                        {
+                            "value": 99,
+                            "str": "不清楚"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "黑色素瘤可能发生以下哪些部位",
+                    "type": "checkbox",
+                    "questionNum": "L03",
+                    "required": "required",
+                    "answers": [
+                        
+                        {
+                            "value": 1,
+                            "str": "面部"
+                        },
+                        {
+                            "value": 2,
+                            "str": "足部"
+                        },
+                        {
+                            "value": 3,
+                            "str": "指（趾）甲"
+                        },
+                        {
+                            "value": 4,
+                            "str": "外阴"
+                        },
+                        {
+                            "value": 99,
+                            "str": "不清楚"
+                            
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "情景题，请阅读下列材料后回答问题：“ABCDE”是黑色素瘤常用的判断指标，其含义如下：A-不对称性（asymmetry）：色素痣形状大多较为对称，而黑色素瘤的形状大多不对称；B-边缘（border）：色素痣边界多规则，清楚，而黑色素瘤的边界常不规则；C-颜色（color）：色素痣的颜色较均一，而黑色素瘤可能会有多种颜色掺杂，深浅不一；D-直径（diameter）：黑素瘤的直径通常大于6毫米；E-进展（evolvement）：最重要的指标，指色素痣最近有无出现颜色或形状或大小的改变。如果符合“ABCDE”标准，则高度怀疑黑素瘤，需取活检进行组织病理学检查进一步确诊。请问：以下哪些情况需要考虑黑素瘤的可能",
+                    "type": "checkbox",
+                    "questionNum": "L04",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "边界不规则"
+                        },
+                        {
+                            "value": 2,
+                            "str": "色素痣的颜色出现黑白棕掺杂"
+                        },
+                        {
+                            "value": 3,
+                            "str": "直径1月内由1cm增大至2cm"
+                        },
+                        {
+                            "value": 4,
+                            "str": "色素痣出现不对称"
+                        },
+                        {
+                            "value": 99,
+                            "str": "不清楚"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "如果高度怀疑黑素瘤可能，需要做什么检查进一步确诊",
+                    "type": "radio",
+                    "questionNum": "L05",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "组织病理学检查"
+                        },
+                        {
+                            "value": 2,
+                            "str": "B超"
+                        },
+                        {
+                            "value": 3,
+                            "str": "抽血化验"
+                        },
+                        {
+                            "value": 4,
+                            "str": "X片或CT"
+                        },
+                        {
+                            "value": 99,
+                            "str": "不清楚"
+                        }
+                        
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "情景题，请阅读下列材料后回答问题：黑素瘤在白色人种和黄色人种的特征有较大差异。1、白种人中浅表扩散型黑素瘤最多见，而黄色人种以肢端雀斑样黑素瘤多见。2、我国黑素瘤常见类型首先为肢端型，即原发病灶位于足底、足趾、手指末端及甲下等部位；而白种人常见于背部、胸膜部和下肢皮肤。3、从病因学上看，白种人黑素瘤的发生与长期或间歇性高强度的紫外线照射明确相关。我国黑素瘤原发病灶多位于足跟、手掌、指趾和甲下等接触紫外线极少的地方，认为不恰当的处理如刀割、绳勒、盐腌、不断摩擦刺激、激光和冷冻等，有可能诱发色素痣的恶变和迅速生长.请问：我国黑素瘤好发于以下哪些部位",
+                    "type": "checkbox",
+                    "questionNum": "L06",
+                    "required": "required",
+                    "answers": [
+                        {
+                            "value": 1,
+                            "str": "指甲"
+                        },
+                        {
+                            "value": 2,
+                            "str": "趾甲"
+                        },
+                        {
+                            "value": 3,
+                            "str": "手掌"
+                        },
+                        {
+                            "value": 4,
+                            "str": "足跟"
+                        },
+                        {
+                            "value": 99,
+                            "str": "不清楚"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "你是否同意以下说法：我国黑色素瘤的发生与紫外线关系不大",
+                    "type": "radio",
+                    "questionNum": "L07",
+                    "required": "required",
+                    "answers": [                        
+                        {
+                            "value": 1,
+                            "str": "同意"
+                        },
+                        {
+                            "value": 0,
+                            "str": "不同意"
+                        },
+                        {
+                            "value": 99,
+                            "str": "不清楚"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "下列哪些因素可以诱发色素痣变为黑色素瘤",
+                    "type": "checkbox",
+                    "questionNum": "L08",
+                    "required": "required",
+                    "answers": [   
+                        {
+                            "value": 1,
+                            "str": "激光点痣"
+                        },                     
+                        {
+                            "value": 2,
+                            "str": "长期日晒"
+                        },
+                        {
+                            "value": 3,
+                            "str": "长期摩擦、挤压"
+                        },
+                        {
+                            "value": 4,
+                            "str": "外伤刺激"
+                        },
+                        {
+                            "value": 99,
+                            "str": "不清楚"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "近一年，你的手部是否出现过与以下图片相似的情况?",
+                    "type": "radio",
+                    "questionNum": "L09",
+                    "required": "required",
+                    "answers": [   
+                        {
+                            "value": 1,
+                            "str": "非常同意"
+                        },
+                        {
+                            "value": 2,
+                            "str": "同意"
+                        },
+                        {
+                            "value": 3,
+                            "str": "不确定"
+                        },
+                        {
+                            "value": 4,
+                            "str": "不同意"
+                            
+                        },
+                        {
+                            "value": 5,
+                            "str": "非常不同意"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "开展一些皮肤肿瘤的科普宣传是有必要的",
+                    "type": "radio",
+                    "questionNum": "L10",
+                    "required": "required",
+                    "answers": [                        
+                        {
+                            "value": 1,
+                            "str": "非常同意"
+                        },
+                        {
+                            "value": 2,
+                            "str": "同意"
+                        },
+                        {
+                            "value": 3,
+                            "str": "不确定"
+                        },
+                        {
+                            "value": 4,
+                            "str": "不同意"
+                            
+                        },
+                        {
+                            "value": 5,
+                            "str": "非常不同意"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "学习一些黑素瘤自我检查知识是有必要的",
+                    "type": "radio",
+                    "questionNum": "L11",
+                    "required": "required",
+                    "answers": [      
+                        {
+                            "value": 1,
+                            "str": "非常同意"
+                        },
+                        {
+                            "value": 2,
+                            "str": "同意"
+                        },
+                        {
+                            "value": 3,
+                            "str": "不确定"
+                        },
+                        {
+                            "value": 4,
+                            "str": "不同意"
+                            
+                        },
+                        {
+                            "value": 5,
+                            "str": "非常不同意"
+                        }
+                        
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "如果你的不良习惯会增加黑素瘤的发生几率，你愿意从现在开始改变",
+                    "type": "radio",
+                    "questionNum": "L12",
+                    "required": "required",
+                    "answers": [      
+                        {
+                            "value": 1,
+                            "str": "非常同意"
+                        },
+                        {
+                            "value": 2,
+                            "str": "同意"
+                        },
+                        {
+                            "value": 3,
+                            "str": "不确定"
+                        },
+                        {
+                            "value": 4,
+                            "str": "不同意"
+                            
+                        },
+                        {
+                            "value": 5,
+                            "str": "非常不同意"
+                        }
+                    ],
+                    "data": []
+                },
+                {
+                    "title": "如果学校开设皮肤肿瘤知识讲座，你会积极参加",
+                    "type": "radio",
+                    "questionNum": "L13",
+                    "required": "required",
+                    "answers": [      
+                        {
+                            "value": 1,
+                            "str": "非常同意"
+                        },
+                        {
+                            "value": 2,
+                            "str": "同意"
+                        },
+                        {
+                            "value": 3,
+                            "str": "不确定"
+                        },
+                        {
+                            "value": 4,
+                            "str": "不同意"
+                            
+                        },
+                        {
+                            "value": 5,
+                            "str": "非常不同意"
                         }
                     ],
                     "data": []

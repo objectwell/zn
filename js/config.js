@@ -1,4 +1,4 @@
-const GLOBAL_DEBUG  = true;//是否本地调试，true本地调试,false生产环境
+const GLOBAL_DEBUG  = false;//是否本地调试，true本地调试,false生产环境
 const GLOBAL_PATH_URL = '';//根目录文件路径 /Xiangya-Hospital
 let GLOBAL_API_URL  = '';//
 if(GLOBAL_DEBUG){
